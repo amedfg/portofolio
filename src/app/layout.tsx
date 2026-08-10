@@ -10,7 +10,7 @@ import { Loader } from "@/components/Loader";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://portofolio.dema.web.id"),
   title: {
     default: "Achmad Fauzi Guritno — Backend Engineer",
     template: "%s · Achmad Fauzi Guritno",
