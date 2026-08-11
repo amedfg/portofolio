@@ -25,10 +25,10 @@ const SOCIALS = [
     handle: "in/achmadfg",
   },
   {
-    href: "https://github.com/achmadfg",
+    href: "https://github.com/amedfg",
     icon: FiGithub,
     label: "GitHub",
-    handle: "@achmadfg",
+    handle: "@amedfg",
   },
 ];
 

@@ -3,7 +3,7 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const SOCIALS = [
-  { href: "https://github.com/achmadfg", icon: FiGithub, label: "GitHub" },
+  { href: "https://github.com/amedfg", icon: FiGithub, label: "GitHub" },
   {
     href: "https://www.linkedin.com/in/achmadfg",
     icon: FiLinkedin,

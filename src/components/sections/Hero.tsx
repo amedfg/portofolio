@@ -108,7 +108,7 @@ export function Hero() {
             </a>
             <div className="ml-1 hidden items-center gap-2 sm:flex">
               <a
-                href="https://github.com/achmadfg"
+                href="https://github.com/amedfg"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
