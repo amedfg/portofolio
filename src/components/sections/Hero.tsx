@@ -11,7 +11,7 @@ import {
   FiArrowDown,
 } from "react-icons/fi";
 
-const HERO_IMAGE = "https://picsum.photos/seed/achmad-hero/800/800";
+const HERO_IMAGE = "/projects/hero.svg";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);

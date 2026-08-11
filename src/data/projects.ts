@@ -7,9 +7,8 @@ export interface Project {
   github: string;
 }
 
-// Using picsum.photos as a deterministic random-image source
-// (source.unsplash.com/random has been deprecated for embedding)
-const img = (seed: string) => `https://picsum.photos/seed/${seed}/800/600`;
+// Local placeholder images (private projects — no external/random images).
+const img = (slug: string) => `/projects/${slug}.svg`;
 
 export const PROJECTS: Project[] = [
   {
