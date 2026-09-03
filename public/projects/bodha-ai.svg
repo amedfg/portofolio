@@ -1,12 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#1e293b"/>
-    </linearGradient>
+    <clipPath id="clip"><rect width="800" height="500" rx="8"/></clipPath>
   </defs>
-  <rect width="800" height="600" fill="url(#g)"/>
-  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#334155" stroke-width="2"/>
-  <text x="400" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#94a3b8">Bodha AI API</text>
-  <text x="400" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#475569">private project</text>
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#0c0a09"/>
+    
+    <!-- Top bar -->
+    <rect width="800" height="40" fill="#1c1917"/>
+    <line x1="0" y1="40" x2="800" y2="40" stroke="#292524" stroke-width="1"/>
+    <circle cx="16" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="20" r="5" fill="#22c55e"/>
+    <text x="400" y="25" fill="#e7e5e4" font-family="system-ui" font-size="13" text-anchor="middle" font-weight="600">Bodha AI — API Explorer</text>
+    
+    <!-- Left sidebar: API Endpoints -->
+    <rect x="0" y="40" width="260" height="460" fill="#1c1917"/>
+    <line x1="260" y1="40" x2="260" y2="500" stroke="#292524" stroke-width="1"/>
+    
+    <!-- Search bar -->
+    <rect x="12" y="52" width="236" height="30" rx="4" fill="#0c0a09" stroke="#292524"/>
+    <text x="24" y="72" fill="#78716c" font-family="system-ui" font-size="12">🔍 Search endpoints...</text>
+    
+    <!-- Section: Chat -->
+    <text x="16" y="106" fill="#78716c" font-family="system-ui" font-size="10" font-weight="700" letter-spacing="1">CHAT</text>
+    
+    <!-- POST /api/chat -->
+    <rect x="12" y="114" width="236" height="32" rx="4" fill="#292524"/>
+    <rect x="18" y="121" width="38" height="18" rx="3" fill="#22c55e"/>
+    <text x="37" y="134" fill="#0c0a09" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">POST</text>
+    <text x="64" y="134" fill="#e7e5e4" font-family="ui-monospace" font-size="11">/api/chat</text>
+    
+    <!-- POST /api/chat/stream -->
+    <rect x="12" y="152" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="159" width="38" height="18" rx="3" fill="#22c55e"/>
+    <text x="37" y="172" fill="#0c0a09" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">POST</text>
+    <text x="64" y="172" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/chat/stream</text>
+    
+    <!-- GET /api/chat/history -->
+    <rect x="12" y="190" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="197" width="32" height="18" rx="3" fill="#3b82f6"/>
+    <text x="34" y="210" fill="#fff" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">GET</text>
+    <text x="58" y="210" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/chat/history</text>
+    
+    <!-- Section: Documents -->
+    <text x="16" y="248" fill="#78716c" font-family="system-ui" font-size="10" font-weight="700" letter-spacing="1">DOCUMENTS</text>
+    
+    <!-- POST /api/documents/analyze -->
+    <rect x="12" y="256" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="263" width="38" height="18" rx="3" fill="#22c55e"/>
+    <text x="37" y="276" fill="#0c0a09" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">POST</text>
+    <text x="64" y="276" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/documents/analyze</text>
+    
+    <!-- POST /api/documents/embed -->
+    <rect x="12" y="294" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="301" width="38" height="18" rx="3" fill="#22c55e"/>
+    <text x="37" y="314" fill="#0c0a09" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">POST</text>
+    <text x="64" y="314" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/documents/embed</text>
+    
+    <!-- GET /api/documents -->
+    <rect x="12" y="332" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="339" width="32" height="18" rx="3" fill="#3b82f6"/>
+    <text x="34" y="352" fill="#fff" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">GET</text>
+    <text x="58" y="352" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/documents</text>
+    
+    <!-- Section: Models -->
+    <text x="16" y="390" fill="#78716c" font-family="system-ui" font-size="10" font-weight="700" letter-spacing="1">MODELS</text>
+    
+    <rect x="12" y="398" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="405" width="32" height="18" rx="3" fill="#3b82f6"/>
+    <text x="34" y="418" fill="#fff" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">GET</text>
+    <text x="58" y="418" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/models</text>
+    
+    <rect x="12" y="436" width="236" height="32" rx="4" fill="transparent"/>
+    <rect x="18" y="443" width="36" height="18" rx="3" fill="#a855f7"/>
+    <text x="36" y="456" fill="#fff" font-family="ui-monospace" font-size="9" font-weight="700" text-anchor="middle">PUT</text>
+    <text x="62" y="456" fill="#a8a29e" font-family="ui-monospace" font-size="11">/api/models/config</text>
+    
+    <!-- Right side: Chat panel -->
+    <rect x="260" y="40" width="540" height="40" fill="#1c1917"/>
+    <line x1="260" y1="80" x2="800" y2="80" stroke="#292524" stroke-width="1"/>
+    <text x="280" y="65" fill="#e7e5e4" font-family="system-ui" font-size="13" font-weight="600">POST /api/chat</text>
+    <rect x="680" y="50" width="50" height="22" rx="4" fill="#22c55e"/>
+    <text x="705" y="65" fill="#0c0a09" font-family="ui-monospace" font-size="10" font-weight="700" text-anchor="middle">200</text>
+    <rect x="736" y="50" width="50" height="22" rx="4" fill="#f59e0b"/>
+    <text x="761" y="65" fill="#0c0a09" font-family="system-ui" font-size="10" font-weight="700" text-anchor="middle">Send</text>
+    
+    <!-- Chat messages area -->
+    <!-- User message -->
+    <rect x="420" y="96" width="360" height="44" rx="6" fill="#292524"/>
+    <text x="432" y="113" fill="#78716c" font-family="system-ui" font-size="10">You</text>
+    <text x="432" y="130" fill="#e7e5e4" font-family="system-ui" font-size="12">Explain how RAG pipelines work in production.</text>
+    
+    <!-- AI response -->
+    <rect x="280" y="152" width="400" height="130" rx="6" fill="#1c1917" stroke="#292524"/>
+    <text x="292" y="172" fill="#f59e0b" font-family="system-ui" font-size="10" font-weight="600">⚡ Bodha AI</text>
+    <text x="292" y="192" fill="#e7e5e4" font-family="system-ui" font-size="11.5">RAG (Retrieval-Augmented Generation) pipelines in</text>
+    <text x="292" y="208" fill="#e7e5e4" font-family="system-ui" font-size="11.5">production typically involve three stages:</text>
+    <text x="292" y="228" fill="#e7e5e4" font-family="system-ui" font-size="11.5">1. Document ingestion &amp; chunking</text>
+    <text x="292" y="244" fill="#e7e5e4" font-family="system-ui" font-size="11.5">2. Vector embedding &amp; indexing</text>
+    <text x="292" y="260" fill="#e7e5e4" font-family="system-ui" font-size="11.5">3. Query-time retrieval &amp; generation</text>
+    <rect x="650" y="270" width="24" height="6" rx="3" fill="#f59e0b" opacity="0.6"/>
+    
+    <!-- JSON Response block -->
+    <text x="280" y="308" fill="#78716c" font-family="system-ui" font-size="10" font-weight="600">Response Body</text>
+    <rect x="280" y="316" width="500" height="170" rx="6" fill="#1c1917" stroke="#292524"/>
+    <text x="296" y="338" fill="#78716c" font-family="ui-monospace" font-size="11">{</text>
+    <text x="312" y="356" fill="#f59e0b" font-family="ui-monospace" font-size="11">"id"</text><text x="340" y="356" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="352" y="356" fill="#22c55e" font-family="ui-monospace" font-size="11">"chat_8f3a2b1c"</text><text x="476" y="356" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="312" y="374" fill="#f59e0b" font-family="ui-monospace" font-size="11">"model"</text><text x="368" y="374" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="380" y="374" fill="#22c55e" font-family="ui-monospace" font-size="11">"bodha-v2-large"</text><text x="524" y="374" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="312" y="392" fill="#f59e0b" font-family="ui-monospace" font-size="11">"tokens"</text><text x="376" y="392" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="388" y="392" fill="#a78bfa" font-family="ui-monospace" font-size="11">342</text><text x="412" y="392" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="312" y="410" fill="#f59e0b" font-family="ui-monospace" font-size="11">"status"</text><text x="376" y="410" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="388" y="410" fill="#22c55e" font-family="ui-monospace" font-size="11">"streaming"</text><text x="472" y="410" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="312" y="428" fill="#f59e0b" font-family="ui-monospace" font-size="11">"latency_ms"</text><text x="404" y="428" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="416" y="428" fill="#a78bfa" font-family="ui-monospace" font-size="11">127</text>
+    <text x="296" y="446" fill="#78716c" font-family="ui-monospace" font-size="11">}</text>
+    
+    <!-- Latency indicator -->
+    <text x="690" y="478" fill="#78716c" font-family="ui-monospace" font-size="10">127ms · 342 tokens</text>
+  </g>
 </svg>

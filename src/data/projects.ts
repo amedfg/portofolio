@@ -1,67 +1,121 @@
 export interface Project {
   title: string;
+  category: "Full-Stack & AI" | "Backend & Architecture" | "Enterprise & System";
+  featured?: boolean;
   description: string;
+  highlights: string[];
   image: string;
   tech: string[];
-  demo: string;
-  github: string;
+  demo?: string;
+  github?: string;
 }
 
-// Local placeholder images (private projects — no external/random images).
 const img = (slug: string) => `/projects/${slug}.svg`;
 
 export const PROJECTS: Project[] = [
   {
-    title: "Bodha AI API",
+    title: "FinanceTrackerKu — AI Financial Assistant",
+    category: "Full-Stack & AI",
+    featured: true,
     description:
-      "A Flask-based AI service providing AI chat, document processing, file management, and CV/resume screening — powered by Ollama and LiteLLM with PostgreSQL and MinIO storage.",
+      "A production-grade self-hosted financial analytics & budget platform featuring multi-intent AI assistant, automated receipt OCR extraction, and real-time wallet synchronization.",
+    highlights: [
+      "Natural language expense logging & intent routing via custom AI engine",
+      "Asynchronous receipt processing worker with Celery & Redis queue",
+      "S3-compatible MinIO object storage with pre-signed upload pipelines",
+      "Dockerized microservices deployed on high-availability Cloudflare Tunnel",
+    ],
+    image: img("financetrackerku"),
+    tech: ["FastAPI", "Next.js", "PostgreSQL", "Celery", "Redis", "MinIO", "Docker", "Tailwind CSS"],
+    demo: "https://ngitung.dema.web.id",
+    github: "https://github.com/amedfg/finance-tracker",
+  },
+  {
+    title: "Bodha AI API Service",
+    category: "Full-Stack & AI",
+    featured: true,
+    description:
+      "Enterprise AI middleware providing conversational AI, intelligent document screening, resume parsing, and private knowledge retrieval.",
+    highlights: [
+      "Multi-provider LLM routing via LiteLLM & self-hosted Ollama models",
+      "High-throughput document analysis with streaming token responses",
+      "Secure asset management backed by PostgreSQL & MinIO object storage",
+    ],
     image: img("bodha-ai"),
-    tech: ["Flask", "Python", "Ollama", "LiteLLM", "PostgreSQL", "MinIO"],
+    tech: ["Flask", "Python", "Ollama", "LiteLLM", "PostgreSQL", "MinIO", "Docker"],
     demo: "",
     github: "",
   },
   {
-    title: "Teletrace API",
+    title: "Teletrace Distributed API",
+    category: "Backend & Architecture",
+    featured: true,
     description:
-      "A Laravel 12 REST API built on a 4-layer Domain-Driven Design architecture with Zitadel OIDC authentication, auto-generated CRUD scaffolding, and real-time WebSocket broadcasting.",
+      "High-scale REST API designed with a strict 4-Layer Domain-Driven Design (DDD) architecture, enterprise OIDC auth, and live event broadcasting.",
+    highlights: [
+      "Modular 4-Layer DDD architecture (Domain, Application, Infrastructure, UI)",
+      "Centralized identity and SSO authentication via Zitadel OIDC",
+      "Real-time event broadcasting over WebSocket channels",
+    ],
     image: img("teletrace"),
-    tech: ["Laravel 12", "PHP", "DDD", "Zitadel OIDC", "WebSocket", "PostgreSQL"],
+    tech: ["Laravel 12", "PHP 8.3", "Domain-Driven Design", "Zitadel OIDC", "WebSocket", "PostgreSQL"],
     demo: "",
     github: "",
   },
   {
-    title: "Executive Dashboard",
+    title: "Executive Portfolio & Risk Dashboard",
+    category: "Enterprise & System",
     description:
-      "A Laravel 12 + Nova 5 application for tracking projects, hierarchical tasks, and budgets, with S-curve, health, and risk reporting — secured with SSO via Zitadel.",
+      "Enterprise project portfolio management application tracking multi-tier tasks, budget burn rates, S-curve projections, and risk assessments.",
+    highlights: [
+      "Automated financial health computation & budget variance alerts",
+      "Interactive S-Curve timeline visualization for executive stakeholder reporting",
+      "Granular RBAC and SSO authentication powered by Zitadel",
+    ],
     image: img("exec-dashboard"),
-    tech: ["Laravel 12", "Laravel Nova 5", "PostgreSQL", "Zitadel SSO"],
+    tech: ["Laravel 12", "Laravel Nova 5", "PostgreSQL", "Zitadel SSO", "Chart.js"],
     demo: "",
     github: "",
   },
   {
-    title: "Dynamic Web Builder",
+    title: "Dynamic Visual Web Builder Core",
+    category: "Full-Stack & AI",
     description:
-      "A no-code platform enabling visual design of complex nested layouts, with dynamic document structures modeled in MongoDB and performant APIs supporting real-time drag-and-drop.",
+      "A flexible drag-and-drop builder backend managing deeply nested component hierarchies with schema-less persistence.",
+    highlights: [
+      "Recursive JSON document tree modeling in MongoDB for nested component trees",
+      "Sub-50ms serialized document delivery optimized for real-time canvas rendering",
+    ],
     image: img("web-builder"),
-    tech: ["Laravel", "MongoDB", "REST API", "Next.js"],
+    tech: ["Laravel", "MongoDB", "REST API", "Next.js", "TypeScript"],
     demo: "",
     github: "",
   },
   {
-    title: "Asset Inventory Management System",
+    title: "United Tractors Asset Inventory System",
+    category: "Enterprise & System",
     description:
-      "A large-scale web-based asset inventory management system serving United Tractors users across Indonesia, built as a Backend Engineer with CodeIgniter 4.",
+      "Nationwide enterprise asset tracking platform managing physical equipment lifecycle, maintenance schedules, and inter-branch transfers across Indonesia.",
+    highlights: [
+      "Engineered reliable asset audit trail with automated verification workflows",
+      "Optimized relational SQL queries handling tens of thousands of inventory records",
+    ],
     image: img("asset-inventory"),
-    tech: ["PHP", "CodeIgniter 4", "MySQL", "Bootstrap"],
+    tech: ["PHP", "CodeIgniter 4", "MySQL", "Bootstrap", "Linux"],
     demo: "",
     github: "",
   },
   {
-    title: "Seat Belt Image Classification",
+    title: "Driver Safety Vision (Seat Belt CNN)",
+    category: "Full-Stack & AI",
     description:
-      "Undergraduate thesis: classifying seat-belt use in car drivers using a Convolutional Neural Network with the ResNet50 architecture.",
+      "Computer vision classification pipeline detecting driver seat belt compliance under varying lighting conditions using Deep Convolutional Neural Networks.",
+    highlights: [
+      "Transfer learning with ResNet50 architecture reaching >93% validation accuracy",
+      "Custom image preprocessing & augmentation pipeline for challenging low-light angles",
+    ],
     image: img("seatbelt-cnn"),
-    tech: ["Python", "TensorFlow", "Keras", "CNN", "ResNet50"],
+    tech: ["Python", "TensorFlow", "Keras", "CNN", "ResNet50", "OpenCV"],
     demo: "",
     github: "",
   },

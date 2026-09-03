@@ -13,28 +13,29 @@ const config: Config = {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       colors: {
+        // Brand: Amber/Rust — earthy, zero AI-slop vibes
         brand: {
-          50: "#eef4ff",
-          100: "#dae6ff",
-          200: "#bdd2ff",
-          300: "#90b3ff",
-          400: "#5e88ff",
-          500: "#3a63ff",
-          600: "#2545f5",
-          700: "#1d35d8",
-          800: "#1c2faf",
-          900: "#1d2d8a",
+          50:  "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#f59e0b", // primary accent
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
         },
       },
       backgroundImage: {
         "grid-light":
-          "linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px)",
+          "linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px)",
         "grid-dark":
-          "linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px)",
+          "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
       },
       boxShadow: {
-        soft: "0 10px 40px -10px rgba(0,0,0,0.15)",
-        glow: "0 0 40px -10px rgba(58, 99, 255, 0.6)",
+        soft: "0 10px 40px -10px rgba(0,0,0,0.12)",
+        glow: "0 0 36px -10px rgba(245, 158, 11, 0.45)",
       },
       keyframes: {
         "fade-in": {

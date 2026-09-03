@@ -17,7 +17,7 @@ export function ThemeToggle() {
     return (
       <button
         aria-label="Toggle theme"
-        className="h-10 w-10 rounded-xl border border-slate-200 dark:border-white/10"
+        className="h-10 w-10 rounded-xl border border-stone-200 dark:border-stone-700/40"
       />
     );
   }
@@ -28,7 +28,7 @@ export function ThemeToggle() {
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label="Toggle theme"
-      className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white/60 backdrop-blur-md transition-colors hover:bg-white dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
+      className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-stone-200 bg-white/60 backdrop-blur-md transition-colors hover:bg-white dark:border-stone-700/40 dark:bg-stone-800/20 dark:hover:bg-white/10"
     >
       <AnimatePresence mode="wait" initial={false}>
         {isDark ? (
@@ -49,7 +49,7 @@ export function ThemeToggle() {
             animate={{ rotate: 0, opacity: 1, scale: 1 }}
             exit={{ rotate: -90, opacity: 0, scale: 0.6 }}
             transition={{ duration: 0.3 }}
-            className="text-slate-700"
+            className="text-stone-700"
           >
             <FiMoon size={18} />
           </motion.span>

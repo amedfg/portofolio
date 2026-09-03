@@ -4,21 +4,21 @@
 
 @layer base {
   :root {
-    --bg: 255 255 255;
-    --fg: 15 23 42;
-    --muted: 100 116 139;
-    --card: 248 250 252;
-    --border: 226 232 240;
-    --accent: 58 99 255;
+    --bg: 252 252 250;
+    --fg: 28 25 23;
+    --muted: 120 113 108;
+    --card: 250 250 249;
+    --border: 214 211 209;
+    --accent: 217 119 6;
   }
 
   .dark {
-    --bg: 5 8 22;
-    --fg: 226 232 240;
-    --muted: 148 163 184;
-    --card: 15 22 41;
-    --border: 30 41 59;
-    --accent: 120 150 255;
+    --bg: 12 10 9;
+    --fg: 231 229 228;
+    --muted: 168 162 158;
+    --card: 28 25 23;
+    --border: 41 37 36;
+    --accent: 245 158 11;
   }
 
   html {
@@ -36,7 +36,7 @@
   }
 
   ::selection {
-    background: rgb(var(--accent) / 0.25);
+    background: rgb(var(--accent) / 0.2);
   }
 }
 
@@ -46,27 +46,27 @@
   }
 
   .glass {
-    @apply border border-white/20 bg-white/60 backdrop-blur-xl dark:border-white/10 dark:bg-white/5;
+    @apply border border-stone-200/40 bg-stone-50/60 backdrop-blur-xl dark:border-stone-700/30 dark:bg-stone-900/30;
   }
 
   .card-soft {
-    @apply rounded-2xl border border-slate-200/70 bg-white/70 shadow-soft backdrop-blur-md dark:border-white/10 dark:bg-white/[0.03];
+    @apply rounded-2xl border border-stone-200/80 bg-white/80 shadow-soft backdrop-blur-md dark:border-stone-700/40 dark:bg-stone-900/40;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-brand-500 via-fuchsia-500 to-orange-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-500 dark:from-amber-400 dark:via-amber-300 dark:to-yellow-400 bg-clip-text text-transparent;
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-500/50;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-amber-500/40;
   }
 
   .btn-primary {
-    @apply btn bg-gradient-to-r from-brand-500 to-fuchsia-500 text-white shadow-glow hover:-translate-y-0.5 hover:shadow-[0_0_50px_-10px_rgba(58,99,255,0.8)];
+    @apply btn bg-stone-900 text-stone-50 hover:-translate-y-0.5 hover:bg-stone-800 dark:bg-stone-100 dark:text-stone-900 dark:hover:bg-stone-200;
   }
 
   .btn-ghost {
-    @apply btn border border-slate-300/70 bg-white/40 text-slate-700 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:bg-white/10;
+    @apply btn border border-stone-300/80 bg-white/50 text-stone-700 hover:bg-white hover:border-stone-400 dark:border-stone-600/50 dark:bg-stone-800/30 dark:text-stone-300 dark:hover:bg-stone-800/60;
   }
 
   .section-heading {
@@ -74,29 +74,27 @@
   }
 
   .section-sub {
-    @apply mt-3 max-w-2xl text-base text-slate-600 dark:text-slate-400;
+    @apply mt-3 max-w-2xl text-base text-stone-600 dark:text-stone-400;
   }
 }
 
-/* Grid background */
+/* Grid background — subtle dot grid instead of lines */
 .bg-grid {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.06) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 70%);
 }
 
 .dark .bg-grid {
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.07) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px
+  );
 }
 
 /* Custom scrollbar */
@@ -108,9 +106,9 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(100, 116, 139, 0.3);
+  background: rgba(120, 113, 108, 0.3);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(100, 116, 139, 0.55);
+  background: rgba(120, 113, 108, 0.55);
 }

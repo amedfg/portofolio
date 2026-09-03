@@ -24,7 +24,7 @@ export function Skills() {
           >
             <div className="mb-5 flex items-center justify-between">
               <h3 className="font-semibold tracking-tight">{category.title}</h3>
-              <span className="text-xs uppercase tracking-wider text-slate-400">
+              <span className="text-xs uppercase tracking-wider text-stone-400">
                 {category.items.length} tools
               </span>
             </div>
@@ -49,7 +49,7 @@ export function Skills() {
                         />
                         {skill.name}
                       </span>
-                      <span className="text-xs text-slate-500 dark:text-slate-400">
+                      <span className="text-xs text-stone-500 dark:text-stone-400">
                         {skill.level}%
                       </span>
                     </div>
@@ -63,7 +63,7 @@ export function Skills() {
                           delay: 0.1 + i * 0.05,
                           ease: "easeOut",
                         }}
-                        className="h-full rounded-full bg-gradient-to-r from-brand-500 to-fuchsia-500"
+                        className="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600"
                       />
                     </div>
                   </motion.div>
@@ -95,7 +95,7 @@ export function Skills() {
         ].map((tag) => (
           <span
             key={tag}
-            className="rounded-full border border-slate-200 bg-white/60 px-3 py-1 text-xs font-medium text-slate-600 backdrop-blur-md transition-colors hover:border-brand-300 hover:text-brand-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-brand-500/40 dark:hover:text-brand-300"
+            className="rounded-full border border-stone-200 bg-white/60 px-3 py-1 text-xs font-medium text-stone-600 backdrop-blur-md transition-colors hover:border-amber-400 hover:text-amber-600 dark:border-stone-700/40 dark:bg-stone-800/20 dark:text-stone-300 dark:hover:border-amber-500/40 dark:hover:text-amber-400"
           >
             {tag}
           </span>

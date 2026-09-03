@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0c0a09"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="500" fill="#1c1917"/>
+  <rect x="0" y="0" width="180" height="500" fill="none" stroke="#292524" stroke-width="1"/>
+
+  <!-- Sidebar logo -->
+  <rect x="20" y="20" width="28" height="28" rx="6" fill="#f59e0b"/>
+  <text x="28" y="39" font-family="ui-monospace,monospace" font-size="14" font-weight="700" fill="#0c0a09">F</text>
+  <text x="56" y="38" font-family="ui-sans-serif,sans-serif" font-size="13" font-weight="600" fill="#e7e5e4">ngitung</text>
+
+  <!-- Sidebar nav items -->
+  <rect x="12" y="68" width="156" height="32" rx="7" fill="#292524"/>
+  <rect x="24" y="79" width="10" height="10" rx="2" fill="#f59e0b"/>
+  <text x="42" y="89" font-family="ui-sans-serif,sans-serif" font-size="12" font-weight="600" fill="#e7e5e4">Dashboard</text>
+
+  <rect x="24" y="116" width="10" height="10" rx="2" fill="#78716c"/>
+  <text x="42" y="126" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#78716c">Transactions</text>
+
+  <rect x="24" y="148" width="10" height="10" rx="2" fill="#78716c"/>
+  <text x="42" y="158" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#78716c">Wallets</text>
+
+  <rect x="24" y="180" width="10" height="10" rx="2" fill="#78716c"/>
+  <text x="42" y="190" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#78716c">Reports</text>
+
+  <rect x="24" y="212" width="10" height="10" rx="2" fill="#78716c"/>
+  <text x="42" y="222" font-family="ui-sans-serif,sans-serif" font-size="12" fill="#78716c">AI Assistant</text>
+
+  <!-- Main content area -->
+  <rect x="180" y="0" width="620" height="500" fill="#0c0a09"/>
+
+  <!-- Top bar -->
+  <rect x="180" y="0" width="620" height="52" fill="#1c1917"/>
+  <rect x="180" y="51" width="620" height="1" fill="#292524"/>
+  <text x="200" y="31" font-family="ui-sans-serif,sans-serif" font-size="14" font-weight="600" fill="#e7e5e4">Overview</text>
+  <text x="200" y="46" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">September 2026</text>
+
+  <!-- Avatar placeholder top right -->
+  <circle cx="770" cy="26" r="14" fill="#292524"/>
+  <text x="763" y="31" font-family="ui-sans-serif,sans-serif" font-size="11" font-weight="600" fill="#a8a29e">AM</text>
+
+  <!-- Stat cards row -->
+  <!-- Card 1: Total Balance -->
+  <rect x="200" y="68" width="178" height="80" rx="10" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="216" y="90" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">Total Balance</text>
+  <text x="216" y="115" font-family="ui-sans-serif,sans-serif" font-size="18" font-weight="700" fill="#e7e5e4">Rp 24.850.000</text>
+  <text x="216" y="135" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#4ade80">↑ 8.2% this month</text>
+
+  <!-- Card 2: Income -->
+  <rect x="390" y="68" width="178" height="80" rx="10" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="406" y="90" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">Income</text>
+  <text x="406" y="115" font-family="ui-sans-serif,sans-serif" font-size="18" font-weight="700" fill="#4ade80">+Rp 8.500.000</text>
+  <text x="406" y="135" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">vs Rp 7.200.000 last mo.</text>
+
+  <!-- Card 3: Expenses -->
+  <rect x="580" y="68" width="178" height="80" rx="10" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="596" y="90" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">Expenses</text>
+  <text x="596" y="115" font-family="ui-sans-serif,sans-serif" font-size="18" font-weight="700" fill="#f87171">-Rp 3.650.000</text>
+  <text x="596" y="135" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">14 transactions</text>
+
+  <!-- Chart section -->
+  <rect x="200" y="162" width="368" height="200" rx="10" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="216" y="184" font-family="ui-sans-serif,sans-serif" font-size="11" font-weight="600" fill="#e7e5e4">Cashflow — Last 6 Months</text>
+
+  <!-- Chart bars (income) -->
+  <rect x="226" y="300" width="28" height="40" rx="3" fill="#f59e0b" opacity="0.3"/>
+  <rect x="276" y="280" width="28" height="60" rx="3" fill="#f59e0b" opacity="0.4"/>
+  <rect x="326" y="255" width="28" height="85" rx="3" fill="#f59e0b" opacity="0.6"/>
+  <rect x="376" y="235" width="28" height="105" rx="3" fill="#f59e0b" opacity="0.75"/>
+  <rect x="426" y="248" width="28" height="92" rx="3" fill="#f59e0b" opacity="0.65"/>
+  <rect x="476" y="220" width="28" height="120" rx="3" fill="#f59e0b"/>
+
+  <!-- Chart bars (expense, overlaid smaller) -->
+  <rect x="226" y="318" width="28" height="22" rx="3" fill="#f87171" opacity="0.5"/>
+  <rect x="276" y="310" width="28" height="30" rx="3" fill="#f87171" opacity="0.5"/>
+  <rect x="326" y="300" width="28" height="40" rx="3" fill="#f87171" opacity="0.5"/>
+  <rect x="376" y="295" width="28" height="45" rx="3" fill="#f87171" opacity="0.5"/>
+  <rect x="426" y="305" width="28" height="35" rx="3" fill="#f87171" opacity="0.5"/>
+  <rect x="476" y="285" width="28" height="55" rx="3" fill="#f87171" opacity="0.5"/>
+
+  <!-- Month labels -->
+  <text x="229" y="355" font-family="ui-monospace,monospace" font-size="9" fill="#78716c">Apr</text>
+  <text x="279" y="355" font-family="ui-monospace,monospace" font-size="9" fill="#78716c">May</text>
+  <text x="329" y="355" font-family="ui-monospace,monospace" font-size="9" fill="#78716c">Jun</text>
+  <text x="379" y="355" font-family="ui-monospace,monospace" font-size="9" fill="#78716c">Jul</text>
+  <text x="429" y="355" font-family="ui-monospace,monospace" font-size="9" fill="#78716c">Aug</text>
+  <text x="479" y="355" font-family="ui-monospace,monospace" font-size="9" fill="#a8a29e">Sep</text>
+
+  <!-- Legend -->
+  <rect x="216" y="195" width="8" height="8" rx="2" fill="#f59e0b"/>
+  <text x="228" y="203" font-family="ui-sans-serif,sans-serif" font-size="9" fill="#a8a29e">Income</text>
+  <rect x="270" y="195" width="8" height="8" rx="2" fill="#f87171"/>
+  <text x="282" y="203" font-family="ui-sans-serif,sans-serif" font-size="9" fill="#a8a29e">Expense</text>
+
+  <!-- Transaction list panel -->
+  <rect x="580" y="162" width="178" height="200" rx="10" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="596" y="184" font-family="ui-sans-serif,sans-serif" font-size="11" font-weight="600" fill="#e7e5e4">Recent</text>
+
+  <!-- Transaction rows -->
+  <rect x="592" y="194" width="8" height="8" rx="4" fill="#f59e0b"/>
+  <text x="606" y="202" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">Gaji Bulan Sep</text>
+  <text x="680" y="202" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#4ade80">+8.5jt</text>
+  <rect x="592" y="206" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="214" width="8" height="8" rx="4" fill="#f87171"/>
+  <text x="606" y="222" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">Kopi Kenangan</text>
+  <text x="687" y="222" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#f87171">-25rb</text>
+  <rect x="592" y="226" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="234" width="8" height="8" rx="4" fill="#f87171"/>
+  <text x="606" y="242" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">GrabFood</text>
+  <text x="685" y="242" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#f87171">-87rb</text>
+  <rect x="592" y="246" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="254" width="8" height="8" rx="4" fill="#4ade80"/>
+  <text x="606" y="262" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">Freelance Project</text>
+  <text x="676" y="262" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#4ade80">+1.5jt</text>
+  <rect x="592" y="266" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="274" width="8" height="8" rx="4" fill="#f87171"/>
+  <text x="606" y="282" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">Token Listrik</text>
+  <text x="682" y="282" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#f87171">-200rb</text>
+  <rect x="592" y="286" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="294" width="8" height="8" rx="4" fill="#f87171"/>
+  <text x="606" y="302" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">Shopee</text>
+  <text x="690" y="302" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#f87171">-450rb</text>
+  <rect x="592" y="306" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="314" width="8" height="8" rx="4" fill="#f87171"/>
+  <text x="606" y="322" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#e7e5e4">Bensin Pertamax</text>
+  <text x="678" y="322" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#f87171">-120rb</text>
+  <rect x="592" y="326" width="160" height="1" fill="#292524"/>
+
+  <rect x="592" y="334" width="8" height="8" rx="4" fill="#f87171"/>
+  <text x="606" y="342" font-family="ui-sans-serif,sans-serif" font-size="10" fill="#78716c">Netflix</text>
+  <text x="690" y="342" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#78716c">-54rb</text>
+
+  <!-- AI Chat bubble -->
+  <rect x="200" y="374" width="558" height="110" rx="10" fill="#1c1917" stroke="#292524" stroke-width="1"/>
+  <text x="216" y="394" font-family="ui-monospace,monospace" font-size="10" fill="#78716c">AI Assistant</text>
+  <rect x="216" y="402" width="440" height="28" rx="6" fill="#0c0a09" stroke="#292524" stroke-width="1"/>
+  <text x="226" y="420" font-family="ui-monospace,monospace" font-size="10" fill="#78716c">beli kopi tadi 25rb dari dompet BCA...</text>
+  <rect x="666" y="404" width="76" height="24" rx="6" fill="#f59e0b"/>
+  <text x="693" y="420" font-family="ui-sans-serif,sans-serif" font-size="10" font-weight="600" fill="#0c0a09" text-anchor="middle">Send</text>
+
+  <!-- AI response -->
+  <rect x="216" y="438" width="8" height="8" rx="4" fill="#f59e0b"/>
+  <text x="230" y="447" font-family="ui-monospace,monospace" font-size="10" fill="#a8a29e">Oke, dicatat! Transaksi</text>
+  <text x="230" y="460" font-family="ui-monospace,monospace" font-size="10" fill="#f59e0b">-Rp 25.000</text>
+  <text x="300" y="460" font-family="ui-monospace,monospace" font-size="10" fill="#a8a29e">dari BCA berhasil disimpan. Sisa saldo BCA: Rp 4.125.000</text>
+  <text x="230" y="474" font-family="ui-monospace,monospace" font-size="10" fill="#a8a29e">Kategori: ☕ Food &amp; Beverages</text>
+</svg>

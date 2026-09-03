@@ -42,7 +42,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-slate-200/60 bg-white/70 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/60"
+          ? "border-b border-stone-200/60 bg-white/70 backdrop-blur-xl dark:border-stone-700/40 dark:bg-stone-950/60"
           : "bg-transparent",
       )}
     >
@@ -52,11 +52,11 @@ export function Navbar() {
           className="group flex items-center gap-2"
           aria-label="Go to home"
         >
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-brand-500 to-fuchsia-500 text-sm font-bold text-white shadow-glow">
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 text-sm font-bold text-white shadow-glow">
             A
           </span>
           <span className="hidden text-sm font-semibold tracking-wide sm:block">
-            Achmad<span className="text-brand-500">.</span>dev
+            Achmad<span className="text-amber-600">.</span>dev
           </span>
         </button>
 
@@ -71,7 +71,7 @@ export function Navbar() {
                     "relative rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                     isActive
                       ? "text-slate-900 dark:text-white"
-                      : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white",
+                      : "text-stone-500 hover:text-slate-900 dark:text-stone-400 dark:hover:text-white",
                   )}
                 >
                   {link.label}
@@ -96,7 +96,7 @@ export function Navbar() {
           <ThemeToggle />
           <button
             onClick={() => setOpen((s) => !s)}
-            className="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 bg-white/60 backdrop-blur-md md:hidden dark:border-white/10 dark:bg-white/5"
+            className="grid h-10 w-10 place-items-center rounded-xl border border-stone-200 bg-white/60 backdrop-blur-md md:hidden dark:border-stone-700/40 dark:bg-stone-800/20"
             aria-label="Toggle menu"
             aria-expanded={open}
           >
@@ -112,7 +112,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-slate-200/60 bg-white/90 backdrop-blur-xl md:hidden dark:border-white/10 dark:bg-slate-950/80"
+            className="overflow-hidden border-t border-stone-200/60 bg-white/90 backdrop-blur-xl md:hidden dark:border-stone-700/40 dark:bg-stone-950/80"
           >
             <ul className="container-px flex flex-col py-3">
               {NAV_LINKS.map((link) => (
@@ -123,12 +123,12 @@ export function Navbar() {
                       "flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-sm font-medium",
                       active === link.id
                         ? "bg-slate-100 text-slate-900 dark:bg-white/10 dark:text-white"
-                        : "text-slate-600 dark:text-slate-300",
+                        : "text-stone-600 dark:text-stone-300",
                     )}
                   >
                     {link.label}
                     {active === link.id && (
-                      <span className="h-2 w-2 rounded-full bg-brand-500" />
+                      <span className="h-2 w-2 rounded-full bg-amber-500" />
                     )}
                   </button>
                 </li>

@@ -64,7 +64,7 @@ export function Contact() {
           className="card-soft p-6 lg:col-span-2"
         >
           <h3 className="font-semibold tracking-tight">Reach me directly</h3>
-          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+          <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
             Prefer email or social? I&apos;m there too.
           </p>
 
@@ -75,18 +75,18 @@ export function Contact() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white/40 p-3 transition-all hover:-translate-y-0.5 hover:border-brand-300 hover:bg-white dark:border-white/10 dark:bg-white/[0.02] dark:hover:bg-white/5"
+                  className="group flex items-center gap-3 rounded-xl border border-stone-200 bg-white/40 p-3 transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:bg-white dark:border-stone-700/40 dark:bg-stone-800/10 dark:hover:bg-white/5"
                 >
-                  <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-brand-500 to-fuchsia-500 text-white">
+                  <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 text-white">
                     <Icon size={15} />
                   </span>
                   <div className="flex-1">
                     <div className="text-sm font-medium">{label}</div>
-                    <div className="text-xs text-slate-500 dark:text-slate-400">
+                    <div className="text-xs text-stone-500 dark:text-stone-400">
                       {handle}
                     </div>
                   </div>
-                  <span className="text-xs text-slate-400 transition-transform group-hover:translate-x-1">
+                  <span className="text-xs text-stone-400 transition-transform group-hover:translate-x-1">
                     →
                   </span>
                 </a>
@@ -126,7 +126,7 @@ export function Contact() {
           <div className="mt-4">
             <label
               htmlFor="message"
-              className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400"
+              className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-stone-500 dark:text-stone-400"
             >
               Message
             </label>
@@ -137,12 +137,12 @@ export function Contact() {
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               placeholder="Tell me about the project, timeline, and goals…"
-              className="w-full resize-none rounded-xl border border-slate-200 bg-white/60 px-4 py-3 text-sm outline-none transition-all placeholder:text-slate-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-500/20 dark:border-white/10 dark:bg-white/[0.03] dark:placeholder:text-slate-500"
+              className="w-full resize-none rounded-xl border border-stone-200 bg-white/60 px-4 py-3 text-sm outline-none transition-all placeholder:text-stone-400 focus:border-amber-400 focus:ring-2 focus:ring-amber-500/20 dark:border-stone-700/40 dark:bg-stone-800/10 dark:placeholder:text-stone-500"
             />
           </div>
 
           <div className="mt-5 flex items-center justify-between gap-4">
-            <p className="text-xs text-slate-500 dark:text-slate-400">
+            <p className="text-xs text-stone-500 dark:text-stone-400">
               By submitting, you agree to be contacted by email.
             </p>
             <button
@@ -204,7 +204,7 @@ function Field({
     <div>
       <label
         htmlFor={id}
-        className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400"
+        className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-stone-500 dark:text-stone-400"
       >
         {label}
       </label>
@@ -216,7 +216,7 @@ function Field({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-slate-200 bg-white/60 px-4 py-2.5 text-sm outline-none transition-all placeholder:text-slate-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-500/20 dark:border-white/10 dark:bg-white/[0.03] dark:placeholder:text-slate-500"
+        className="w-full rounded-xl border border-stone-200 bg-white/60 px-4 py-2.5 text-sm outline-none transition-all placeholder:text-stone-400 focus:border-amber-400 focus:ring-2 focus:ring-amber-500/20 dark:border-stone-700/40 dark:bg-stone-800/10 dark:placeholder:text-stone-500"
       />
     </div>
   );

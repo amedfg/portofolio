@@ -36,7 +36,7 @@ export function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="space-y-5 text-slate-600 dark:text-slate-300 lg:col-span-7"
+          className="space-y-5 text-stone-600 dark:text-stone-300 lg:col-span-7"
         >
           <p>
             I&apos;m a backend engineer with{" "}
@@ -72,12 +72,12 @@ export function About() {
               whileHover={{ y: -4 }}
               className="card-soft group flex items-start gap-4 p-5"
             >
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-fuchsia-500 text-white shadow-glow transition-transform group-hover:scale-110">
+              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-glow transition-transform group-hover:scale-110">
                 <item.icon size={18} />
               </div>
               <div>
                 <h3 className="font-semibold">{item.title}</h3>
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+                <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
                   {item.text}
                 </p>
               </div>

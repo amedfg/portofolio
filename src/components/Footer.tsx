@@ -14,9 +14,9 @@ const SOCIALS = [
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-slate-200/60 bg-white/40 backdrop-blur-md dark:border-white/10 dark:bg-slate-950/40">
+    <footer className="relative border-t border-stone-200/60 bg-white/40 backdrop-blur-md dark:border-stone-700/40 dark:bg-stone-950/40">
       <div className="container-px flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
-        <p className="text-sm text-slate-500 dark:text-slate-400">
+        <p className="text-sm text-stone-500 dark:text-stone-400">
           © {new Date().getFullYear()} Achmad Fauzi Guritno. Crafted with
           Next.js & Tailwind.
         </p>
@@ -28,7 +28,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="grid h-9 w-9 place-items-center rounded-lg border border-slate-200 bg-white/60 text-slate-600 transition-all hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:text-brand-300"
+              className="grid h-9 w-9 place-items-center rounded-lg border border-stone-200 bg-white/60 text-stone-600 transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-600 dark:border-stone-700/40 dark:bg-stone-800/20 dark:text-stone-300 dark:hover:text-amber-400"
             >
               <Icon size={16} />
             </a>

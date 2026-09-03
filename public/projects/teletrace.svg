@@ -1,12 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#1e293b"/>
-    </linearGradient>
+    <clipPath id="clip"><rect width="800" height="500" rx="8"/></clipPath>
   </defs>
-  <rect width="800" height="600" fill="url(#g)"/>
-  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#334155" stroke-width="2"/>
-  <text x="400" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#94a3b8">Teletrace API</text>
-  <text x="400" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#475569">private project</text>
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#0c0a09"/>
+    
+    <!-- Top bar -->
+    <rect width="800" height="40" fill="#1c1917"/>
+    <line x1="0" y1="40" x2="800" y2="40" stroke="#292524" stroke-width="1"/>
+    <circle cx="16" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="20" r="5" fill="#22c55e"/>
+    <text x="400" y="25" fill="#78716c" font-family="ui-monospace" font-size="12" text-anchor="middle">Terminal — teletrace-api</text>
+    
+    <!-- Terminal content -->
+    <!-- Prompt 1 -->
+    <text x="20" y="70" fill="#22c55e" font-family="ui-monospace" font-size="12">❯</text>
+    <text x="36" y="70" fill="#e7e5e4" font-family="ui-monospace" font-size="12">curl -s -X POST http://localhost:3000/api/v1/traces \</text>
+    <text x="36" y="88" fill="#e7e5e4" font-family="ui-monospace" font-size="12">  -H "Authorization: Bearer tk_live_9f8a2b..." \</text>
+    <text x="36" y="106" fill="#e7e5e4" font-family="ui-monospace" font-size="12">  -H "Content-Type: application/json" \</text>
+    <text x="36" y="124" fill="#e7e5e4" font-family="ui-monospace" font-size="12">  -d '{"traceId":"TRC-20240315-001","source":"gps-unit-07"}'</text>
+    
+    <!-- Response 1 -->
+    <text x="20" y="150" fill="#78716c" font-family="ui-monospace" font-size="11">HTTP/1.1</text>
+    <text x="80" y="150" fill="#22c55e" font-family="ui-monospace" font-size="11" font-weight="700">201 Created</text>
+    <text x="20" y="170" fill="#78716c" font-family="ui-monospace" font-size="11">{</text>
+    <text x="36" y="186" fill="#f59e0b" font-family="ui-monospace" font-size="11">"id"</text><text x="62" y="186" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="74" y="186" fill="#22c55e" font-family="ui-monospace" font-size="11">"a3f8c912-4b7e-4d1a-bc5f-2e9a71d08c34"</text><text x="406" y="186" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="36" y="202" fill="#f59e0b" font-family="ui-monospace" font-size="11">"traceId"</text><text x="108" y="202" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="120" y="202" fill="#22c55e" font-family="ui-monospace" font-size="11">"TRC-20240315-001"</text><text x="284" y="202" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="36" y="218" fill="#f59e0b" font-family="ui-monospace" font-size="11">"status"</text><text x="102" y="218" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="114" y="218" fill="#22c55e" font-family="ui-monospace" font-size="11">"ACTIVE"</text><text x="178" y="218" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="36" y="234" fill="#f59e0b" font-family="ui-monospace" font-size="11">"source"</text><text x="102" y="234" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="114" y="234" fill="#22c55e" font-family="ui-monospace" font-size="11">"gps-unit-07"</text><text x="226" y="234" fill="#78716c" font-family="ui-monospace" font-size="11">,</text>
+    <text x="36" y="250" fill="#f59e0b" font-family="ui-monospace" font-size="11">"aggregate"</text><text x="126" y="250" fill="#78716c" font-family="ui-monospace" font-size="11">: {</text>
+    <text x="52" y="266" fill="#f59e0b" font-family="ui-monospace" font-size="11">"domainEvents"</text><text x="162" y="266" fill="#78716c" font-family="ui-monospace" font-size="11">: [</text><text x="178" y="266" fill="#22c55e" font-family="ui-monospace" font-size="11">"TraceCreated"</text><text x="282" y="266" fill="#78716c" font-family="ui-monospace" font-size="11">],</text>
+    <text x="52" y="282" fill="#f59e0b" font-family="ui-monospace" font-size="11">"version"</text><text x="124" y="282" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="136" y="282" fill="#a78bfa" font-family="ui-monospace" font-size="11">1</text>
+    <text x="36" y="298" fill="#78716c" font-family="ui-monospace" font-size="11">},</text>
+    <text x="36" y="314" fill="#f59e0b" font-family="ui-monospace" font-size="11">"createdAt"</text><text x="120" y="314" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="132" y="314" fill="#22c55e" font-family="ui-monospace" font-size="11">"2024-03-15T08:32:14.221Z"</text>
+    <text x="20" y="330" fill="#78716c" font-family="ui-monospace" font-size="11">}</text>
+    
+    <!-- Separator -->
+    <line x1="20" y1="344" x2="780" y2="344" stroke="#292524" stroke-width="1" stroke-dasharray="4,4"/>
+    
+    <!-- Prompt 2 -->
+    <text x="20" y="366" fill="#22c55e" font-family="ui-monospace" font-size="12">❯</text>
+    <text x="36" y="366" fill="#e7e5e4" font-family="ui-monospace" font-size="12">curl -s http://localhost:3000/api/v1/traces/TRC-20240315-001/events</text>
+    
+    <!-- Response 2 -->
+    <text x="20" y="392" fill="#78716c" font-family="ui-monospace" font-size="11">HTTP/1.1</text>
+    <text x="80" y="392" fill="#22c55e" font-family="ui-monospace" font-size="11" font-weight="700">200 OK</text>
+    <text x="200" y="392" fill="#78716c" font-family="ui-monospace" font-size="10">Content-Type: application/json; charset=utf-8</text>
+    <text x="20" y="412" fill="#78716c" font-family="ui-monospace" font-size="11">{</text>
+    <text x="36" y="428" fill="#f59e0b" font-family="ui-monospace" font-size="11">"events"</text><text x="100" y="428" fill="#78716c" font-family="ui-monospace" font-size="11">: [</text>
+    <text x="52" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">{ </text><text x="68" y="444" fill="#f59e0b" font-family="ui-monospace" font-size="11">"type"</text><text x="108" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="118" y="444" fill="#22c55e" font-family="ui-monospace" font-size="11">"TraceCreated"</text><text x="222" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">,</text><text x="234" y="444" fill="#f59e0b" font-family="ui-monospace" font-size="11">"seq"</text><text x="266" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="276" y="444" fill="#a78bfa" font-family="ui-monospace" font-size="11">1</text><text x="284" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">,</text><text x="294" y="444" fill="#f59e0b" font-family="ui-monospace" font-size="11">"at"</text><text x="318" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="328" y="444" fill="#22c55e" font-family="ui-monospace" font-size="11">"2024-03-15T08:32:14Z"</text><text x="510" y="444" fill="#78716c" font-family="ui-monospace" font-size="11">},</text>
+    <text x="52" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">{ </text><text x="68" y="460" fill="#f59e0b" font-family="ui-monospace" font-size="11">"type"</text><text x="108" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="118" y="460" fill="#22c55e" font-family="ui-monospace" font-size="11">"LocationUpdated"</text><text x="244" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">,</text><text x="256" y="460" fill="#f59e0b" font-family="ui-monospace" font-size="11">"seq"</text><text x="288" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="298" y="460" fill="#a78bfa" font-family="ui-monospace" font-size="11">2</text><text x="306" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">,</text><text x="316" y="460" fill="#f59e0b" font-family="ui-monospace" font-size="11">"at"</text><text x="340" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="350" y="460" fill="#22c55e" font-family="ui-monospace" font-size="11">"2024-03-15T08:45:02Z"</text><text x="532" y="460" fill="#78716c" font-family="ui-monospace" font-size="11">}</text>
+    <text x="36" y="476" fill="#78716c" font-family="ui-monospace" font-size="11">],</text><text x="52" y="476" fill="#f59e0b" font-family="ui-monospace" font-size="11">"total"</text><text x="102" y="476" fill="#78716c" font-family="ui-monospace" font-size="11">:</text><text x="114" y="476" fill="#a78bfa" font-family="ui-monospace" font-size="11">2</text>
+    <text x="20" y="492" fill="#78716c" font-family="ui-monospace" font-size="11">}</text>
+  </g>
 </svg>

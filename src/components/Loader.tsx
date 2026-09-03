@@ -18,19 +18,19 @@ export function Loader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="fixed inset-0 z-[100] grid place-items-center bg-white dark:bg-slate-950"
+          className="fixed inset-0 z-[100] grid place-items-center bg-white dark:bg-stone-950"
         >
           <div className="flex flex-col items-center gap-4">
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 1.2, repeat: Infinity, ease: "linear" }}
-              className="h-12 w-12 rounded-full border-2 border-slate-200 border-t-brand-500 dark:border-white/10 dark:border-t-brand-400"
+              className="h-12 w-12 rounded-full border-2 border-stone-200 border-t-amber-500 dark:border-stone-700/40 dark:border-t-amber-400"
             />
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-sm font-medium tracking-wide text-slate-500 dark:text-slate-400"
+              className="text-sm font-medium tracking-wide text-stone-500 dark:text-stone-400"
             >
               Loading portfolio…
             </motion.span>

@@ -1,12 +1,179 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#1e293b"/>
-    </linearGradient>
+    <clipPath id="clip"><rect width="800" height="500" rx="8"/></clipPath>
   </defs>
-  <rect width="800" height="600" fill="url(#g)"/>
-  <rect x="1" y="1" width="798" height="598" fill="none" stroke="#334155" stroke-width="2"/>
-  <text x="400" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="34" font-weight="600" fill="#94a3b8">Asset Inventory Management System</text>
-  <text x="400" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#475569">private project</text>
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#0c0a09"/>
+
+    <!-- Top bar -->
+    <rect width="800" height="56" fill="#1c1917"/>
+    <line x1="0" y1="56" x2="800" y2="56" stroke="#292524" stroke-width="1"/>
+    <text x="24" y="28" fill="#e7e5e4" font-family="system-ui" font-size="16" font-weight="700">Asset Inventory</text>
+    <text x="24" y="46" fill="#78716c" font-family="system-ui" font-size="11">Enterprise Equipment Management System</text>
+    <rect x="560" y="14" width="28" height="28" rx="6" fill="#292524"/>
+    <text x="574" y="32" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⊕</text>
+    <rect x="596" y="14" width="80" height="28" rx="6" fill="#f59e0b"/>
+    <text x="636" y="32" fill="#0c0a09" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">+ Add Asset</text>
+    <rect x="684" y="14" width="80" height="28" rx="6" fill="#292524"/>
+    <text x="724" y="32" fill="#e7e5e4" font-family="system-ui" font-size="11" text-anchor="middle">⬇ Export</text>
+
+    <!-- Filters + Search bar -->
+    <rect x="0" y="56" width="800" height="52" fill="#1c1917"/>
+    <line x1="0" y1="108" x2="800" y2="108" stroke="#292524" stroke-width="1"/>
+    
+    <!-- Search input -->
+    <rect x="16" y="68" width="280" height="30" rx="6" fill="#0c0a09" stroke="#292524"/>
+    <text x="32" y="88" fill="#78716c" font-family="system-ui" font-size="12">🔍  Search assets, IDs, locations...</text>
+    
+    <!-- Filter pills -->
+    <rect x="308" y="68" width="80" height="30" rx="6" fill="#292524"/>
+    <text x="348" y="88" fill="#e7e5e4" font-family="system-ui" font-size="11" text-anchor="middle">All Status</text>
+    
+    <rect x="396" y="68" width="100" height="30" rx="6" fill="#292524"/>
+    <text x="446" y="88" fill="#e7e5e4" font-family="system-ui" font-size="11" text-anchor="middle">All Locations</text>
+    
+    <rect x="504" y="68" width="90" height="30" rx="6" fill="#292524"/>
+    <text x="549" y="88" fill="#e7e5e4" font-family="system-ui" font-size="11" text-anchor="middle">Category ▾</text>
+    
+    <text x="730" y="88" fill="#78716c" font-family="system-ui" font-size="11">142 assets</text>
+
+    <!-- Table header -->
+    <rect x="0" y="108" width="800" height="36" fill="#1c1917"/>
+    <line x1="0" y1="144" x2="800" y2="144" stroke="#292524" stroke-width="1"/>
+    
+    <!-- Checkbox column header -->
+    <rect x="20" y="118" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    
+    <text x="52" y="131" fill="#78716c" font-family="system-ui" font-size="11" font-weight="600">Asset ID</text>
+    <text x="160" y="131" fill="#78716c" font-family="system-ui" font-size="11" font-weight="600">Name</text>
+    <text x="330" y="131" fill="#78716c" font-family="system-ui" font-size="11" font-weight="600">Location</text>
+    <text x="470" y="131" fill="#78716c" font-family="system-ui" font-size="11" font-weight="600">Category</text>
+    <text x="570" y="131" fill="#78716c" font-family="system-ui" font-size="11" font-weight="600">Status</text>
+    <text x="668" y="131" fill="#78716c" font-family="system-ui" font-size="11" font-weight="600">Last Audit</text>
+    
+    <!-- Sort indicator -->
+    <text x="90" y="131" fill="#f59e0b" font-family="system-ui" font-size="10">↕</text>
+
+    <!-- Table rows -->
+    <!-- Row 1 - Operational, highlighted -->
+    <rect x="0" y="144" width="800" height="44" fill="#1c1917"/>
+    <line x1="0" y1="188" x2="800" y2="188" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="155" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="171" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-001</text>
+    <text x="160" y="166" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Excavator PC200</text>
+    <text x="160" y="180" fill="#78716c" font-family="system-ui" font-size="9">Komatsu PC200-8M0</text>
+    <text x="330" y="171" fill="#e7e5e4" font-family="system-ui" font-size="11">Jakarta Utara Branch</text>
+    <text x="470" y="171" fill="#e7e5e4" font-family="system-ui" font-size="11">Heavy Equipment</text>
+    <rect x="570" y="152" width="80" height="20" rx="10" fill="#166534"/>
+    <text x="610" y="166" fill="#4ade80" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Operational</text>
+    <text x="668" y="171" fill="#e7e5e4" font-family="system-ui" font-size="11">12 Mar 2024</text>
+    <text x="768" y="171" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Row 2 -->
+    <rect x="0" y="188" width="800" height="44" fill="#0c0a09"/>
+    <line x1="0" y1="232" x2="800" y2="232" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="199" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="215" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-002</text>
+    <text x="160" y="210" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Crane Liebherr LTM</text>
+    <text x="160" y="224" fill="#78716c" font-family="system-ui" font-size="9">Liebherr LTM 1055-3.2</text>
+    <text x="330" y="215" fill="#e7e5e4" font-family="system-ui" font-size="11">Surabaya Port</text>
+    <text x="470" y="215" fill="#e7e5e4" font-family="system-ui" font-size="11">Lifting Equipment</text>
+    <rect x="570" y="196" width="80" height="20" rx="10" fill="#166534"/>
+    <text x="610" y="210" fill="#4ade80" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Operational</text>
+    <text x="668" y="215" fill="#e7e5e4" font-family="system-ui" font-size="11">28 Feb 2024</text>
+    <text x="768" y="215" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Row 3 - Maintenance -->
+    <rect x="0" y="232" width="800" height="44" fill="#1c1917"/>
+    <line x1="0" y1="276" x2="800" y2="276" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="243" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="259" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-003</text>
+    <text x="160" y="254" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Dump Truck HD785</text>
+    <text x="160" y="268" fill="#78716c" font-family="system-ui" font-size="9">Komatsu HD785-7</text>
+    <text x="330" y="259" fill="#e7e5e4" font-family="system-ui" font-size="11">Kalimantan Site A</text>
+    <text x="470" y="259" fill="#e7e5e4" font-family="system-ui" font-size="11">Transport</text>
+    <rect x="570" y="240" width="80" height="20" rx="10" fill="#7c2d12"/>
+    <text x="610" y="254" fill="#fb923c" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Maintenance</text>
+    <text x="668" y="259" fill="#e7e5e4" font-family="system-ui" font-size="11">05 Jan 2024</text>
+    <text x="768" y="259" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Row 4 -->
+    <rect x="0" y="276" width="800" height="44" fill="#0c0a09"/>
+    <line x1="0" y1="320" x2="800" y2="320" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="287" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="303" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-004</text>
+    <text x="160" y="298" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Forklift Mitsubishi FD</text>
+    <text x="160" y="312" fill="#78716c" font-family="system-ui" font-size="9">Mitsubishi FD25N</text>
+    <text x="330" y="303" fill="#e7e5e4" font-family="system-ui" font-size="11">Bekasi Warehouse</text>
+    <text x="470" y="303" fill="#e7e5e4" font-family="system-ui" font-size="11">Handling</text>
+    <rect x="570" y="284" width="80" height="20" rx="10" fill="#166534"/>
+    <text x="610" y="298" fill="#4ade80" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Operational</text>
+    <text x="668" y="303" fill="#e7e5e4" font-family="system-ui" font-size="11">20 Mar 2024</text>
+    <text x="768" y="303" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Row 5 - Retired -->
+    <rect x="0" y="320" width="800" height="44" fill="#1c1917"/>
+    <line x1="0" y1="364" x2="800" y2="364" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="331" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="347" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-005</text>
+    <text x="160" y="342" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Genset Cummins 500kVA</text>
+    <text x="160" y="356" fill="#78716c" font-family="system-ui" font-size="9">Cummins C500D5</text>
+    <text x="330" y="347" fill="#e7e5e4" font-family="system-ui" font-size="11">Medan Plant</text>
+    <text x="470" y="347" fill="#e7e5e4" font-family="system-ui" font-size="11">Power</text>
+    <rect x="570" y="328" width="64" height="20" rx="10" fill="#374151"/>
+    <text x="602" y="342" fill="#9ca3af" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Retired</text>
+    <text x="668" y="347" fill="#e7e5e4" font-family="system-ui" font-size="11">14 Nov 2023</text>
+    <text x="768" y="347" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Row 6 -->
+    <rect x="0" y="364" width="800" height="44" fill="#0c0a09"/>
+    <line x1="0" y1="408" x2="800" y2="408" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="375" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="391" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-006</text>
+    <text x="160" y="386" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Bulldozer Caterpillar D6</text>
+    <text x="160" y="400" fill="#78716c" font-family="system-ui" font-size="9">Caterpillar D6T</text>
+    <text x="330" y="391" fill="#e7e5e4" font-family="system-ui" font-size="11">Papua Mining Site</text>
+    <text x="470" y="391" fill="#e7e5e4" font-family="system-ui" font-size="11">Heavy Equipment</text>
+    <rect x="570" y="372" width="80" height="20" rx="10" fill="#166534"/>
+    <text x="610" y="386" fill="#4ade80" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Operational</text>
+    <text x="668" y="391" fill="#e7e5e4" font-family="system-ui" font-size="11">01 Mar 2024</text>
+    <text x="768" y="391" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Row 7 -->
+    <rect x="0" y="408" width="800" height="44" fill="#1c1917"/>
+    <line x1="0" y1="452" x2="800" y2="452" stroke="#292524" stroke-width="0.5"/>
+    <rect x="20" y="419" width="16" height="16" rx="3" fill="#292524" stroke="#78716c" stroke-width="1"/>
+    <text x="52" y="435" fill="#f59e0b" font-family="ui-monospace" font-size="11">AST-007</text>
+    <text x="160" y="430" fill="#e7e5e4" font-family="system-ui" font-size="12" font-weight="500">Compactor Bomag BW</text>
+    <text x="160" y="444" fill="#78716c" font-family="system-ui" font-size="9">Bomag BW 226 DH-5</text>
+    <text x="330" y="435" fill="#e7e5e4" font-family="system-ui" font-size="11">Bandung Project</text>
+    <text x="470" y="435" fill="#e7e5e4" font-family="system-ui" font-size="11">Compaction</text>
+    <rect x="570" y="416" width="80" height="20" rx="10" fill="#78350f"/>
+    <text x="610" y="430" fill="#fcd34d" font-family="system-ui" font-size="10" font-weight="600" text-anchor="middle">Inspection</text>
+    <text x="668" y="435" fill="#e7e5e4" font-family="system-ui" font-size="11">08 Mar 2024</text>
+    <text x="768" y="435" fill="#78716c" font-family="system-ui" font-size="14" text-anchor="middle">⋮</text>
+
+    <!-- Pagination footer -->
+    <rect x="0" y="452" width="800" height="48" fill="#1c1917"/>
+    <line x1="0" y1="452" x2="800" y2="452" stroke="#292524" stroke-width="1"/>
+    <text x="24" y="482" fill="#78716c" font-family="system-ui" font-size="11">Showing 1–7 of 142 assets</text>
+    
+    <!-- Pagination buttons -->
+    <rect x="516" y="462" width="32" height="24" rx="4" fill="#292524"/>
+    <text x="532" y="478" fill="#78716c" font-family="system-ui" font-size="11" text-anchor="middle">«</text>
+    <rect x="554" y="462" width="32" height="24" rx="4" fill="#292524"/>
+    <text x="570" y="478" fill="#78716c" font-family="system-ui" font-size="11" text-anchor="middle">‹</text>
+    <rect x="592" y="462" width="32" height="24" rx="4" fill="#f59e0b"/>
+    <text x="608" y="478" fill="#0c0a09" font-family="system-ui" font-size="11" font-weight="700" text-anchor="middle">1</text>
+    <rect x="630" y="462" width="32" height="24" rx="4" fill="#292524"/>
+    <text x="646" y="478" fill="#e7e5e4" font-family="system-ui" font-size="11" text-anchor="middle">2</text>
+    <rect x="668" y="462" width="32" height="24" rx="4" fill="#292524"/>
+    <text x="684" y="478" fill="#e7e5e4" font-family="system-ui" font-size="11" text-anchor="middle">3</text>
+    <text x="710" y="478" fill="#78716c" font-family="system-ui" font-size="11">...</text>
+    <rect x="724" y="462" width="32" height="24" rx="4" fill="#292524"/>
+    <text x="740" y="478" fill="#78716c" font-family="system-ui" font-size="11" text-anchor="middle">›</text>
+    <rect x="762" y="462" width="32" height="24" rx="4" fill="#292524"/>
+    <text x="778" y="478" fill="#78716c" font-family="system-ui" font-size="11" text-anchor="middle">»</text>
+  </g>
 </svg>
