@@ -1,91 +1,99 @@
-# Alex Carter — Fullstack Developer Portfolio
+# Achmad Fauzi Guritno — Portfolio
 
-A modern, professional, and highly interactive portfolio built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
+A personal portfolio built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**, focusing on clean engineering aesthetics, responsive design, and production projects.
+
+Live: [https://portofolio.dema.web.id](https://portofolio.dema.web.id)
+
+---
 
 ## Features
 
-- Clean, minimal, fully responsive UI (mobile / tablet / desktop)
-- Dark & light theme with system preference + toggle, smooth transitions
-- Framer Motion animations: page entrances, scroll fade/slide, hover, tilt, parallax hero
-- Sections: Hero, About, Skills, Projects, Experience (timeline), Contact (form + socials)
-- Sticky navbar with scroll spy + active section indicator
-- Reusable card components, glassmorphism, gradient accents
-- Loading animation + scroll-to-top button
-- SEO meta tags via Next.js `Metadata`
-- Optimized images via `next/image`
-- Mock data for projects & experience
+- **Engineering Aesthetic**: Stone/Amber earthy color palette (no generic gradient slop).
+- **Interactive Terminal**: Real-time mock capabilities inspector directly on the hero section.
+- **Responsive Design**: Tested across mobile (iPhone SE, iPhone 14), tablet (iPad Air), laptop, and 1080p desktop.
+- **Dark & Light Mode**: Smooth theme transitions powered by `next-themes`.
+- **Project Showcase**: Category filtering (`Full-Stack & AI`, `Backend & Architecture`, `Enterprise & System`) with realistic UI/terminal mockups.
+- **Dockerized**: Multi-stage standalone production build ready for deployment.
+
+---
 
 ## Tech Stack
 
-| Layer        | Tools                                  |
-| ------------ | -------------------------------------- |
-| Framework    | Next.js 14 (App Router) + TypeScript   |
-| Styling      | Tailwind CSS 3, custom design tokens   |
-| Animations   | Framer Motion                          |
-| Theming      | `next-themes` (system / light / dark)  |
-| Icons        | `react-icons` (Feather + Simple Icons) |
+| Layer | Tools |
+|---|---|
+| **Framework** | Next.js 16 (Turbopack) + React 19 + TypeScript |
+| **Styling** | Tailwind CSS 3 (Stone / Amber design tokens) |
+| **Animations** | Framer Motion |
+| **Theming** | `next-themes` (Dark / Light / System) |
+| **Icons** | `react-icons` (Feather Icons) |
+| **Deployment** | Docker (Alpine Node.js standalone) + Cloudflare Tunnel |
+
+---
 
 ## Getting Started
+
+### Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Project Structure
-
-```
-src/
-├── app/
-│   ├── globals.css        # Tailwind + design tokens
-│   ├── layout.tsx         # Root layout with Providers, Navbar, Footer
-│   ├── page.tsx           # Composes all sections
-│   └── providers.tsx      # next-themes ThemeProvider
-├── components/
-│   ├── Navbar.tsx         # Scroll spy + responsive menu + theme toggle
-│   ├── Footer.tsx
-│   ├── ThemeToggle.tsx
-│   ├── ScrollToTop.tsx
-│   ├── Loader.tsx
-│   ├── ui/
-│   │   ├── Section.tsx    # Section heading wrapper
-│   │   └── ProjectCard.tsx# 3D tilt card with hover overlay
-│   └── sections/
-│       ├── Hero.tsx       # Parallax + animated portrait
-│       ├── About.tsx
-│       ├── Skills.tsx     # Animated progress bars + tag pills
-│       ├── Projects.tsx
-│       ├── Experience.tsx # Vertical timeline
-│       └── Contact.tsx    # Mock-submit form + social cards
-├── data/                  # Mock data
-├── hooks/
-│   └── useActiveSection.ts
-└── lib/
-    └── cn.ts
-```
-
-## Customizing
-
-- **Personal info / copy** — edit `src/components/sections/Hero.tsx`, `About.tsx`, `Contact.tsx`.
-- **Skills** — `src/data/skills.ts`.
-- **Projects** — `src/data/projects.ts`.
-- **Experience** — `src/data/experience.ts`.
-- **Theme palette** — `tailwind.config.ts` (the `brand` color scale).
-- **CV download** — place your `cv.pdf` in `public/` (the Hero button links to `/cv.pdf`).
-
-## Build
+### Production Build
 
 ```bash
 npm run build
 npm start
 ```
 
-## Notes on images
+### Docker Deployment
 
-The brief asked for `https://source.unsplash.com/random` placeholder images.
-Unsplash deprecated that endpoint for new embeds, so the project uses
-[picsum.photos](https://picsum.photos) seeds for deterministic random images.
-Both hostnames are pre-configured in `next.config.js`, so you can swap them
-freely.
+```bash
+docker build -t portofolio-amed:latest .
+docker run -d --name portofolio-amed -p 3001:3001 --restart unless-stopped portofolio-amed:latest
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css        # Tailwind tokens & base styling
+│   ├── layout.tsx         # Root layout with SEO metadata & providers
+│   ├── page.tsx           # Page assembler
+│   └── providers.tsx      # ThemeProvider wrapper
+├── components/
+│   ├── Navbar.tsx         # Responsive navbar with scroll-spy
+│   ├── Footer.tsx
+│   ├── ThemeToggle.tsx
+│   ├── ScrollToTop.tsx
+│   ├── Loader.tsx
+│   ├── ui/
+│   │   ├── Section.tsx    # Section wrapper
+│   │   └── ProjectCard.tsx# 3D interactive project cards
+│   └── sections/
+│       ├── Hero.tsx       # Bio & interactive terminal demo
+│       ├── About.tsx
+│       ├── Skills.tsx     # Technical skill breakdown
+│       ├── Projects.tsx   # Categorized project grid
+│       ├── Experience.tsx # Career timeline
+│       └── Contact.tsx    # Contact links & message form
+├── data/
+│   ├── projects.ts        # Featured & archived project records
+│   ├── skills.ts          # Core competencies
+│   └── experience.ts      # Career history
+├── hooks/
+│   └── useActiveSection.ts
+└── lib/
+    └── cn.ts
+```
+
+---
+
+## License
+
+MIT © [Achmad Fauzi Guritno](https://github.com/amedfg)
