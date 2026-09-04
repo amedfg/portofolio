@@ -92,7 +92,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         {/* Content Details */}
-        <div className="flex flex-col flex-1 p-5 sm:p-6 justify-between">
+        <div className="flex flex-col flex-1 p-4 sm:p-6 justify-between">
           <div>
             <div className="flex items-start justify-between gap-2">
               <h3 className="text-lg font-bold tracking-tight text-stone-900 dark:text-stone-100 group-hover:text-amber-400 transition-colors">

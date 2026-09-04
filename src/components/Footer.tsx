@@ -15,7 +15,7 @@ const SOCIALS = [
 export function Footer() {
   return (
     <footer className="relative border-t border-stone-200/60 bg-white/40 backdrop-blur-md dark:border-stone-700/40 dark:bg-stone-950/40">
-      <div className="container-px flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
+      <div className="container-px flex flex-col items-center justify-between gap-4 py-8 pb-24 sm:pb-8">
         <p className="text-sm text-stone-500 dark:text-stone-400">
           © {new Date().getFullYear()} Achmad Fauzi Guritno. Built with
           Next.js & Tailwind.

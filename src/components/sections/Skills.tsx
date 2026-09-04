@@ -41,17 +41,17 @@ export function Skills() {
                 return (
                   <div
                     key={skill.name}
-                    className="flex items-center justify-between text-sm"
+                    className="flex items-center justify-between gap-3 text-sm"
                   >
-                    <span className="flex items-center gap-2 font-medium">
+                    <span className="flex min-w-0 items-center gap-2 font-medium">
                       <Icon
                         size={16}
                         style={{ color: skill.color }}
                         className="shrink-0"
                       />
-                      {skill.name}
+                      <span className="truncate">{skill.name}</span>
                     </span>
-                    <span className="text-xs text-stone-400 dark:text-stone-500">
+                    <span className="shrink-0 text-xs text-stone-400 dark:text-stone-500">
                       {level}
                     </span>
                   </div>

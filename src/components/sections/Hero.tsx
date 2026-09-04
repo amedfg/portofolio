@@ -123,24 +123,24 @@ export function Hero() {
             <a href="#projects" className="btn-ghost w-full sm:w-auto text-center">
               <FiLayers /> View Projects
             </a>
-            <div className="flex items-center justify-center gap-2 mt-1 sm:mt-0 sm:ml-1">
+            <div className="mt-6 flex items-center justify-center gap-2 sm:mt-0 sm:ml-1">
               <a
                 href="https://github.com/amedfg"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="grid h-10 w-10 place-items-center rounded-xl border border-stone-200 bg-white/60 text-stone-600 transition-all hover:-translate-y-0.5 hover:text-amber-600 dark:border-stone-700/50 dark:bg-stone-800/30 dark:text-stone-400 dark:hover:text-amber-400"
+                className="grid h-12 w-12 place-items-center rounded-xl border border-stone-200 bg-white/60 text-stone-600 transition-all hover:-translate-y-0.5 hover:text-amber-600 dark:border-stone-700/50 dark:bg-stone-800/30 dark:text-stone-400 dark:hover:text-amber-400"
               >
-                <FiGithub size={16} />
+                <FiGithub size={18} />
               </a>
               <a
                 href="https://www.linkedin.com/in/achmadfg"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="grid h-10 w-10 place-items-center rounded-xl border border-stone-200 bg-white/60 text-stone-600 transition-all hover:-translate-y-0.5 hover:text-amber-600 dark:border-stone-700/50 dark:bg-stone-800/30 dark:text-stone-400 dark:hover:text-amber-400"
+                className="grid h-12 w-12 place-items-center rounded-xl border border-stone-200 bg-white/60 text-stone-600 transition-all hover:-translate-y-0.5 hover:text-amber-600 dark:border-stone-700/50 dark:bg-stone-800/30 dark:text-stone-400 dark:hover:text-amber-400"
               >
-                <FiLinkedin size={16} />
+                <FiLinkedin size={18} />
               </a>
             </div>
           </motion.div>
@@ -159,12 +159,12 @@ export function Hero() {
             ].map((s) => (
               <div
                 key={s.label}
-                className="card-soft p-2.5 sm:p-3.5 text-center transition-all hover:-translate-y-0.5 hover:border-amber-500/40"
+                className="card-soft px-1.5 p-2.5 sm:p-3.5 text-center transition-all hover:-translate-y-0.5 hover:border-amber-500/40"
               >
                 <div className="text-xs sm:text-base font-bold tracking-tight text-stone-900 dark:text-stone-100 truncate">
                   {s.value}
                 </div>
-                <div className="text-[10px] sm:text-xs font-medium text-stone-500 dark:text-stone-400 mt-0.5 truncate">
+                <div className="text-[9px] sm:text-xs font-medium text-stone-500 dark:text-stone-400 mt-0.5 truncate">
                   {s.label}
                 </div>
               </div>

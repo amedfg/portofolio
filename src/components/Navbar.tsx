@@ -42,7 +42,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-stone-200/60 bg-white/70 backdrop-blur-xl dark:border-stone-700/40 dark:bg-stone-950/60"
+          ? "border-b border-stone-200/60 bg-white/90 backdrop-blur-xl dark:border-stone-700/40 dark:bg-stone-950/90"
           : "bg-transparent",
       )}
     >
