@@ -34,18 +34,29 @@ const SOCIALS = [
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [failed, setFailed] = useState(false);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Mock submission — replace with real endpoint
-    await new Promise((r) => setTimeout(r, 900));
-    setLoading(false);
-    setSent(true);
-    setForm({ name: "", email: "", message: "" });
-    setTimeout(() => setSent(false), 4000);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSent(true);
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setSent(false), 4000);
+    } catch {
+      setFailed(true);
+      setTimeout(() => setFailed(false), 4000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -172,6 +183,16 @@ export function Contact() {
                 className="absolute inset-x-6 bottom-6 flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50/90 p-3 text-sm font-medium text-emerald-700 backdrop-blur-md dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300"
               >
                 <FiCheckCircle /> Thanks — your message is on its way!
+              </motion.div>
+            )}
+            {failed && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                className="absolute inset-x-6 bottom-6 flex items-center gap-2 rounded-xl border border-red-200 bg-red-50/90 p-3 text-sm font-medium text-red-700 backdrop-blur-md dark:border-red-500/30 dark:bg-red-500/10 dark:text-red-300"
+              >
+                Gagal mengirim — coba lagi atau email langsung ke achmadf2301@gmail.com
               </motion.div>
             )}
           </AnimatePresence>
