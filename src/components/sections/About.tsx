@@ -27,8 +27,8 @@ export function About() {
     <Section
       id="about"
       eyebrow="About me"
-      title="A backend engineer focused on efficient, reliable systems."
-      subtitle="From the API contract down to the database schema, I build software that generates measurable business impact."
+      title="A backend engineer who ships."
+      subtitle="I work across the whole backend: API design, database schema, queues, and deployment. Here's what that looks like in practice."
     >
       <div className="grid items-start gap-12 lg:grid-cols-12">
         <motion.div
@@ -40,18 +40,18 @@ export function About() {
         >
           <p>
             I&apos;m a backend engineer with{" "}
-            <span className="font-semibold text-slate-900 dark:text-white">
+            <span className="font-semibold text-stone-900 dark:text-stone-100">
               2+ years of professional experience
-            </span>{" "}
-            building high-performance backend systems, enterprise applications,
-            and AI-driven services across diverse industries.
+            </span>
+            , currently at PT. Bodha Padma Nawadhya in Jakarta. Before that,
+            most of what I learned came from breaking and fixing my own
+            projects.
           </p>
           <p>
-            I specialize in developing scalable REST APIs with Laravel and
-            Flask, architecting Domain-Driven Design solutions, and integrating
-            modern AI technologies including LiteLLM and Ollama. I work daily
-            with PostgreSQL, MongoDB, AWS S3, and MinIO, and implement
-            authentication via OIDC-based SSO.
+            Day to day I build REST APIs with Laravel and Flask using a
+            4-layer Domain-Driven Design structure, integrate LLM features via
+            LiteLLM and Ollama, and work with PostgreSQL, MongoDB, MinIO, and
+            S3. Auth is OIDC-based SSO with Zitadel.
           </p>
           <p>
             I&apos;m a Computer Science graduate from Diponegoro University
@@ -72,7 +72,7 @@ export function About() {
               whileHover={{ y: -4 }}
               className="card-soft group flex items-start gap-4 p-5"
             >
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-glow transition-transform group-hover:scale-110">
+              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-amber-500 text-white transition-transform group-hover:scale-110">
                 <item.icon size={18} />
               </div>
               <div>

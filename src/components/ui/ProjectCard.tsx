@@ -47,7 +47,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{ rotateX: rX, rotateY: rY, transformStyle: "preserve-3d" }}
-        className="card-soft group relative flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-glow hover:border-amber-500/40"
+        className="card-soft group relative flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-soft hover:border-amber-500/40"
       >
         {/* Visual Graphic Header */}
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-stone-950/40 border-b border-stone-200/60 dark:border-white/5">
@@ -67,7 +67,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
 
           {/* Action Links Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-end justify-end p-3 gap-2">
+          <div className="absolute inset-0 bg-stone-950/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-end justify-end p-3 gap-2">
             {project.demo && (
               <a
                 href={project.demo}
@@ -109,7 +109,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               <ul className="mt-3.5 space-y-1.5 border-t border-stone-200/70 dark:border-white/5 pt-3">
                 {project.highlights.slice(0, 3).map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-xs text-stone-600 dark:text-stone-400">
-                    <FiCheckCircle className="mt-0.5 text-emerald-500 shrink-0" size={12} />
+                    <FiCheckCircle className="mt-0.5 text-amber-500 shrink-0" size={12} />
                     <span>{item}</span>
                   </li>
                 ))}

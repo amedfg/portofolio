@@ -52,7 +52,7 @@ export function Navbar() {
           className="group flex items-center gap-2"
           aria-label="Go to home"
         >
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 text-sm font-bold text-white shadow-glow">
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-amber-500 text-sm font-bold text-white">
             A
           </span>
           <span className="hidden text-sm font-semibold tracking-wide sm:block">
@@ -70,8 +70,8 @@ export function Navbar() {
                   className={cn(
                     "relative rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                     isActive
-                      ? "text-slate-900 dark:text-white"
-                      : "text-stone-500 hover:text-slate-900 dark:text-stone-400 dark:hover:text-white",
+                      ? "text-stone-900 dark:text-white"
+                      : "text-stone-500 hover:text-stone-900 dark:text-stone-400 dark:hover:text-white",
                   )}
                 >
                   {link.label}
@@ -83,7 +83,7 @@ export function Navbar() {
                         stiffness: 380,
                         damping: 30,
                       }}
-                      className="absolute inset-0 -z-10 rounded-lg bg-slate-100 dark:bg-white/10"
+                      className="absolute inset-0 -z-10 rounded-lg bg-stone-100 dark:bg-white/10"
                     />
                   )}
                 </button>
@@ -122,7 +122,7 @@ export function Navbar() {
                     className={cn(
                       "flex w-full items-center justify-between rounded-lg px-3 py-3 text-left text-sm font-medium",
                       active === link.id
-                        ? "bg-slate-100 text-slate-900 dark:bg-white/10 dark:text-white"
+                        ? "bg-stone-100 text-stone-900 dark:bg-white/10 dark:text-white"
                         : "text-stone-600 dark:text-stone-300",
                     )}
                   >

@@ -10,8 +10,8 @@ export function Experience() {
     <Section
       id="experience"
       eyebrow="Experience"
-      title="The path that got me here."
-      subtitle="A short tour through the teams and products I've shipped with."
+      title="Where I've worked."
+      subtitle="Two stints so far — one internship, one full-time backend role."
     >
       <div className="relative">
         <div
@@ -29,7 +29,7 @@ export function Experience() {
               transition={{ duration: 0.6, delay: i * 0.05 }}
               className="relative sm:pl-14"
             >
-              <div className="absolute left-0 top-2 hidden h-8 w-8 items-center justify-center rounded-full border border-amber-400 bg-white shadow-glow dark:border-amber-500/30 dark:bg-stone-950 sm:flex">
+              <div className="absolute left-0 top-2 hidden h-8 w-8 items-center justify-center rounded-full border border-amber-400 bg-white shadow-soft dark:border-amber-500/30 dark:bg-stone-950 sm:flex">
                 <FiBriefcase
                   className="text-amber-700 dark:text-amber-400"
                   size={14}
@@ -66,7 +66,10 @@ export function Experience() {
                       key={h}
                       className="flex items-start gap-2 text-sm text-stone-600 dark:text-stone-300"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-amber-500 to-amber-600" />
+                      <span
+                        className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500"
+                        aria-hidden
+                      />
                       {h}
                     </li>
                   ))}

@@ -25,7 +25,7 @@ export function ScrollToTop() {
           whileTap={{ scale: 0.95 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Scroll to top"
-          className="fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center rounded-full bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-glow"
+          className="fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center rounded-full bg-amber-500 text-white shadow-soft"
         >
           <FiArrowUp size={18} />
         </motion.button>

@@ -8,7 +8,6 @@ import {
   FiLinkedin,
   FiArrowDown,
   FiTerminal,
-  FiCpu,
   FiLayers,
   FiPlay,
 } from "react-icons/fi";
@@ -77,25 +76,6 @@ export function Hero() {
     >
       {/* Dynamic Background */}
       <div className="absolute inset-0 -z-10 bg-grid opacity-70" />
-      <div className="absolute inset-x-0 top-0 -z-10 h-[550px] bg-gradient-to-b from-amber-500/5 via-stone-500/5 to-transparent" />
-      
-      <motion.div
-        aria-hidden
-        animate={{ scale: [1, 1.15, 1] }}
-        transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -left-32 top-28 -z-10 h-72 w-72 rounded-full bg-amber-400/15 blur-3xl pointer-events-none"
-      />
-      <motion.div
-        aria-hidden
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{
-          duration: 16,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-        className="absolute -right-32 top-40 -z-10 h-72 w-72 rounded-full bg-stone-400/10 blur-3xl pointer-events-none"
-      />
 
       <motion.div
         style={{ y, opacity }}
@@ -112,11 +92,11 @@ export function Hero() {
             Hi, I&apos;m{" "}
             <span className="gradient-text">Achmad Fauzi Guritno</span>.
             <br />
-            Architecting{" "}
+            Backend engineer. I build{" "}
             <span className="text-amber-600 dark:text-amber-400 font-extrabold">
-              Scalable Backends
+              REST APIs
             </span>{" "}
-            & AI Systems.
+            with Laravel & Flask, and wire AI into them (LiteLLM, Ollama).
           </motion.h1>
 
           <motion.p
@@ -125,12 +105,10 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 w-full max-w-xl text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed break-words"
           >
-            Backend & Systems Engineer specializing in{" "}
-            <span className="font-semibold text-stone-900 dark:text-stone-100">
-              Domain-Driven Design (DDD)
-            </span>
-            , high-throughput microservices, and asynchronous AI agent pipelines.
-            Crafting resilient architectures with FastAPI, Laravel 12, PostgreSQL, and Celery.
+            Two years building production services: a 4-layer Domain-Driven
+            Design architecture at Bodha Padma Nawadhya, async workers on
+            Celery + Redis, and self-hosted infra on Docker with PostgreSQL,
+            MinIO, and Cloudflare Tunnel.
           </motion.p>
 
           <motion.div
@@ -201,11 +179,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative w-full lg:col-span-5 lg:mt-2 min-w-0"
         >
-          {/* Subtle Outer Glow */}
-          <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-amber-500/20 via-stone-400/10 to-amber-400/15 blur-lg opacity-70 pointer-events-none" />
-
           {/* Terminal Box */}
-          <div className="relative rounded-2xl border border-stone-700/80 bg-stone-950/95 shadow-2xl backdrop-blur-xl overflow-hidden text-stone-200">
+          <div className="relative rounded-2xl border border-stone-700/80 bg-stone-950/95 shadow-2xl overflow-hidden text-stone-200">
             {/* Window Top Bar */}
             <div className="flex items-center justify-between border-b border-stone-800 bg-stone-900/90 px-3.5 py-2.5">
               <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
@@ -218,7 +193,7 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-1 shrink-0">
                 <span className="inline-flex items-center gap-1 rounded bg-stone-800 px-2 py-0.5 font-mono text-[9px] sm:text-[10px] text-amber-400">
-                  <FiCpu className="animate-spin" size={10} /> LIVE DEMO
+                  <FiTerminal size={10} /> LIVE DEMO
                 </span>
               </div>
             </div>
@@ -252,7 +227,7 @@ export function Hero() {
               {/* Status and Badge */}
               <div className="flex items-center justify-between rounded-lg bg-stone-900/90 border border-stone-800 p-2 sm:p-2.5 gap-2">
                 <div className="flex items-center gap-1.5 min-w-0">
-                  <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                  <span className="h-2 w-2 rounded-full bg-emerald-500 shrink-0" />
                   <span className="text-emerald-300 font-semibold text-[10px] sm:text-xs truncate">
                     {COMMANDS[activeCmd].response}
                   </span>

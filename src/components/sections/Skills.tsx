@@ -10,7 +10,7 @@ export function Skills() {
       id="skills"
       eyebrow="Skills"
       title="Tools I reach for, and feel at home with."
-      subtitle="A snapshot of the stack I use day to day. I&apos;m comfortable across the stack and pick the right tool for the problem — not the other way around."
+      subtitle="The stack I use day to day, and how deep it goes."
     >
       <div className="grid gap-6 md:grid-cols-2">
         {SKILL_CATEGORIES.map((category, catIdx) => (
@@ -29,44 +29,32 @@ export function Skills() {
               </span>
             </div>
 
-            <div className="space-y-4">
-              {category.items.map((skill, i) => {
+            <div className="space-y-3">
+              {category.items.map((skill) => {
                 const Icon = skill.icon;
+                const level =
+                  skill.level >= 90
+                    ? "Expert"
+                    : skill.level >= 80
+                      ? "Advanced"
+                      : "Familiar";
                 return (
-                  <motion.div
+                  <div
                     key={skill.name}
-                    initial={{ opacity: 0, x: -10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    className="flex items-center justify-between text-sm"
                   >
-                    <div className="mb-1.5 flex items-center justify-between text-sm">
-                      <span className="flex items-center gap-2 font-medium">
-                        <Icon
-                          size={16}
-                          style={{ color: skill.color }}
-                          className="shrink-0"
-                        />
-                        {skill.name}
-                      </span>
-                      <span className="text-xs text-stone-500 dark:text-stone-400">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-white/10">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{
-                          duration: 1,
-                          delay: 0.1 + i * 0.05,
-                          ease: "easeOut",
-                        }}
-                        className="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-600"
+                    <span className="flex items-center gap-2 font-medium">
+                      <Icon
+                        size={16}
+                        style={{ color: skill.color }}
+                        className="shrink-0"
                       />
-                    </div>
-                  </motion.div>
+                      {skill.name}
+                    </span>
+                    <span className="text-xs text-stone-400 dark:text-stone-500">
+                      {level}
+                    </span>
+                  </div>
                 );
               })}
             </div>

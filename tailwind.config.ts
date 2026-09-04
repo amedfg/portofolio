@@ -34,8 +34,8 @@ const config: Config = {
           "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
       },
       boxShadow: {
-        soft: "0 10px 40px -10px rgba(0,0,0,0.12)",
-        glow: "0 0 36px -10px rgba(245, 158, 11, 0.45)",
+        soft: "0 4px 16px -6px rgba(0,0,0,0.08)",
+        glow: "0 8px 24px -12px rgba(0,0,0,0.25)",
       },
       keyframes: {
         "fade-in": {

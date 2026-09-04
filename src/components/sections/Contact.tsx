@@ -88,7 +88,7 @@ export function Contact() {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-3 rounded-xl border border-stone-200 bg-white/40 p-3 transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:bg-white dark:border-stone-700/40 dark:bg-stone-800/10 dark:hover:bg-white/5"
                 >
-                  <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 text-white">
+                  <span className="grid h-9 w-9 place-items-center rounded-lg bg-amber-500 text-white">
                     <Icon size={15} />
                   </span>
                   <div className="flex-1">
@@ -180,7 +180,7 @@ export function Contact() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
-                className="absolute inset-x-6 bottom-6 flex items-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50/90 p-3 text-sm font-medium text-emerald-700 backdrop-blur-md dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300"
+                className="absolute inset-x-6 bottom-6 flex items-center gap-2 rounded-xl border border-amber-200 bg-amber-50/90 p-3 text-sm font-medium text-amber-800 backdrop-blur-md dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-300"
               >
                 <FiCheckCircle /> Thanks — your message is on its way!
               </motion.div>

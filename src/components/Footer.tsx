@@ -17,7 +17,7 @@ export function Footer() {
     <footer className="relative border-t border-stone-200/60 bg-white/40 backdrop-blur-md dark:border-stone-700/40 dark:bg-stone-950/40">
       <div className="container-px flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
         <p className="text-sm text-stone-500 dark:text-stone-400">
-          © {new Date().getFullYear()} Achmad Fauzi Guritno. Crafted with
+          © {new Date().getFullYear()} Achmad Fauzi Guritno. Built with
           Next.js & Tailwind.
         </p>
         <div className="flex items-center gap-2">
