@@ -26,8 +26,8 @@ export const PROJECTS: Project[] = [
     ],
     image: img("duitku"),
     tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "SQLite", "PWA", "systemd"],
-    demo: "https://finance.dema.web.id",
-    github: "https://github.com/amedfg/duitku",
+    demo: "",
+    github: "",
   },
   {
     title: "ManhwaKu — Modern Webtoon & Manga Reader PWA",
@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     image: img("manhwaku"),
     tech: ["React 19", "Vite", "TypeScript", "Tailwind CSS", "GraphQL", "Suwayomi", "Nginx", "Docker", "PWA"],
     demo: "https://manhwa.dema.web.id",
-    github: "https://github.com/amedfg/manhwaku",
+    github: "",
   },
   {
     title: "MakanKu — Jakarta Selatan Culinary Curator",
@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
     image: img("makanku"),
     tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "SQLite", "Playwright", "systemd"],
     demo: "https://makan.dema.web.id",
-    github: "https://github.com/amedfg/makanku",
+    github: "",
   },
   {
     title: "ChatKu — Self-Hosted AI Assistant & Document Hub",
@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
     image: img("chatku"),
     tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "PostgreSQL", "9Router", "Docker"],
     demo: "https://chat.dema.web.id",
-    github: "https://github.com/amedfg/chatku",
+    github: "",
   },
   {
     title: "Bodha AI API Service",
