@@ -14,25 +14,73 @@ const img = (slug: string) => `/projects/${slug}.svg`;
 
 export const PROJECTS: Project[] = [
   {
-    title: "FinanceTrackerKu — AI Financial Assistant",
+    title: "DuitKu — Personal Finance & Cashflow Engine",
     category: "Full-Stack & AI",
     featured: true,
     description:
-      "Self-hosted expense tracker I use daily. Log spending in plain Indonesian, snap a receipt and OCR fills in the rest.",
+      "Self-hosted personal finance dashboard & PWA built with Next.js 15, native SQLite, and Swiss FinTech styling. Tracks daily cashflow and dynamic 25th–24th salary cycles.",
     highlights: [
-      "Plain-language logging: \"kopi 25rb\" becomes a categorized transaction",
-      "Receipt OCR runs async on Celery + Redis, images stored in MinIO",
-      "Runs on a single VPS: FastAPI, Next.js, PostgreSQL behind Cloudflare Tunnel",
+      "Dynamic cycle engine automatically calculates active 25th–24th salary periods and daily safe-to-spend limits",
+      "Interactive cubic Bézier spline area charts and 2D calendar matrix heatmap with zero chart library overhead",
+      "Zero-dependency native node:sqlite backend with single-user signed cookie session authentication",
     ],
-    image: img("financetrackerku"),
-    tech: ["FastAPI", "Next.js", "PostgreSQL", "Celery", "Redis", "MinIO", "Docker"],
-    demo: "https://ngitung.dema.web.id",
-    github: "https://github.com/amedfg/finance-tracker",
+    image: img("duitku"),
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "SQLite", "PWA", "systemd"],
+    demo: "https://finance.dema.web.id",
+    github: "https://github.com/amedfg/duitku",
+  },
+  {
+    title: "ManhwaKu — Modern Webtoon & Manga Reader PWA",
+    category: "Full-Stack & AI",
+    featured: true,
+    description:
+      "High-performance Progressive Web App for reading webtoons and manga, connected to self-hosted Suwayomi Tachidesk backend with Direct Turbo CDN bypass.",
+    highlights: [
+      "Sub-100ms reading experience bypassing Suwayomi thread locks via direct scanlator edge CDN streaming and Nginx multi-tier caching",
+      "Real-time Extension & Source Health Monitor with automated Cloudflare anti-bot detection across active scanlators",
+      "Granular panel-level progress tracking, multi-device cloud bookmark sync, and zero-layout-shift resume",
+    ],
+    image: img("manhwaku"),
+    tech: ["React 19", "Vite", "TypeScript", "Tailwind CSS", "GraphQL", "Suwayomi", "Nginx", "Docker", "PWA"],
+    demo: "https://manhwa.dema.web.id",
+    github: "https://github.com/amedfg/manhwaku",
+  },
+  {
+    title: "MakanKu — Jakarta Selatan Culinary Curator",
+    category: "Full-Stack & AI",
+    featured: true,
+    description:
+      "Automated culinary discovery platform curating 1,500+ restaurants, coffee shops, and street food across South Jakarta with automated headless Google Maps crawling.",
+    highlights: [
+      "Playwright stealth feed scraper running automated low-and-slow rotation into SQLite every 2 hours",
+      "Real-time Haversine distance calculations relative to user GPS or Ciganjur / Moh. Kahfi center",
+      "Comprehensive sub-district filtering covering Jagakarsa, Pasar Minggu, Cilandak, Kebayoran, and Pancoran",
+    ],
+    image: img("makanku"),
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "SQLite", "Playwright", "systemd"],
+    demo: "https://makan.dema.web.id",
+    github: "https://github.com/amedfg/makanku",
+  },
+  {
+    title: "ChatKu — Self-Hosted AI Assistant & Document Hub",
+    category: "Full-Stack & AI",
+    featured: true,
+    description:
+      "Clean, responsive AI assistant web application connected to self-hosted 9Router LLM gateway, supporting multimodal vision models, document parsing, and full-text search.",
+    highlights: [
+      "Multimodal document ingestion: PDF, DOCX, and image OCR text extraction for LLM context injection",
+      "Indonesian & English full-text search using PostgreSQL pg_trgm GIN indexes, dropping search latency to ~4ms",
+      "Resilient SSE streaming with automatic keep-alive retry and pinned conversation organization",
+    ],
+    image: img("chatku"),
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "PostgreSQL", "9Router", "Docker"],
+    demo: "https://chat.dema.web.id",
+    github: "https://github.com/amedfg/chatku",
   },
   {
     title: "Bodha AI API Service",
     category: "Full-Stack & AI",
-    featured: true,
+    featured: false,
     description:
       "Internal AI service at my current job: chat, document screening, and resume parsing for the company's products.",
     highlights: [
@@ -48,7 +96,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Teletrace Distributed API",
     category: "Backend & Architecture",
-    featured: true,
+    featured: false,
     description:
       "Laravel API structured as 4-layer DDD (Domain, Application, Infrastructure, Interface) with SSO and WebSocket events.",
     highlights: [

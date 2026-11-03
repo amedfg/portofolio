@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <clipPath id="clip"><rect width="800" height="500" rx="8"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#0c0a09"/>
+
+    <!-- Top bar -->
+    <rect width="800" height="40" fill="#1c1917"/>
+    <line x1="0" y1="40" x2="800" y2="40" stroke="#292524" stroke-width="1"/>
+    <circle cx="16" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="20" r="5" fill="#22c55e"/>
+    <text x="400" y="25" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="13" text-anchor="middle" font-weight="600">MakanKu — Jakarta Selatan Culinary Curator (1,500+ Spots)</text>
+
+    <!-- Header bar -->
+    <rect x="0" y="40" width="800" height="56" fill="#141210"/>
+    <line x1="0" y1="96" x2="800" y2="96" stroke="#292524" stroke-width="1"/>
+
+    <!-- App Logo -->
+    <rect x="24" y="54" width="28" height="28" rx="6" fill="#f59e0b"/>
+    <text x="38" y="73" font-family="ui-monospace, monospace" font-size="14" font-weight="800" fill="#0c0a09" text-anchor="middle">M</text>
+    <text x="62" y="73" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#f5f5f4">Makan<tspan fill="#f59e0b">Ku</tspan></text>
+
+    <!-- Search Input in Header -->
+    <rect x="180" y="52" width="340" height="32" rx="8" fill="#1c1917" stroke="#292524"/>
+    <text x="198" y="72" font-family="system-ui, sans-serif" font-size="11" fill="#78716c">🔍 Cari kuliner, kopi, atau warung di Jaksel...</text>
+
+    <!-- Scraper Counter Pill -->
+    <rect x="620" y="52" width="156" height="32" rx="8" fill="#1c1917" stroke="#292524"/>
+    <circle cx="636" cy="68" r="4" fill="#22c55e"/>
+    <text x="648" y="72" font-family="ui-monospace, monospace" font-size="11" font-weight="600" fill="#f59e0b">1.588 Tempat Makan</text>
+
+    <!-- Kecamatan Filter Chips -->
+    <rect x="24" y="112" width="70" height="28" rx="7" fill="#f59e0b"/>
+    <text x="59" y="130" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0c0a09" text-anchor="middle">Semua</text>
+
+    <rect x="102" y="112" width="88" height="28" rx="7" fill="#1c1917" stroke="#292524"/>
+    <text x="146" y="130" font-family="system-ui, sans-serif" font-size="11" fill="#e7e5e4" text-anchor="middle">Jagakarsa</text>
+
+    <rect x="198" y="112" width="104" height="28" rx="7" fill="#1c1917" stroke="#292524"/>
+    <text x="250" y="130" font-family="system-ui, sans-serif" font-size="11" fill="#e7e5e4" text-anchor="middle">Pasar Minggu</text>
+
+    <rect x="310" y="112" width="84" height="28" rx="7" fill="#1c1917" stroke="#292524"/>
+    <text x="352" y="130" font-family="system-ui, sans-serif" font-size="11" fill="#e7e5e4" text-anchor="middle">Cilandak</text>
+
+    <rect x="402" y="112" width="116" height="28" rx="7" fill="#1c1917" stroke="#292524"/>
+    <text x="460" y="130" font-family="system-ui, sans-serif" font-size="11" fill="#e7e5e4" text-anchor="middle">Kebayoran Baru</text>
+
+    <!-- Places Cards (Grid 3x2) -->
+    <!-- Card 1 -->
+    <rect x="24" y="156" width="236" height="150" rx="12" fill="#1c1917" stroke="#292524"/>
+    <text x="40" y="184" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f5f5f4">Kopi Nako Kahfi</text>
+    <text x="40" y="202" font-family="system-ui, sans-serif" font-size="10" fill="#a8a29e">Cafe &amp; Coffee Shop • Jagakarsa</text>
+    <rect x="40" y="214" width="46" height="18" rx="4" fill="#f59e0b" fill-opacity="0.15"/>
+    <text x="63" y="227" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#f59e0b" text-anchor="middle">★ 4.6</text>
+    <text x="94" y="227" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">(1.240 ulasan)</text>
+    <text x="40" y="254" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">Jl. Moh. Kahfi 1 No. 8 • ~0.8 km</text>
+    <rect x="40" y="268" width="80" height="22" rx="5" fill="#292524"/>
+    <text x="80" y="283" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f59e0b" text-anchor="middle">Buka GMaps ↗</text>
+
+    <!-- Card 2 -->
+    <rect x="282" y="156" width="236" height="150" rx="12" fill="#1c1917" stroke="#292524"/>
+    <text x="298" y="184" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f5f5f4">Sate Maranggi Ciganjur</text>
+    <text x="298" y="202" font-family="system-ui, sans-serif" font-size="10" fill="#a8a29e">Resto Keluarga • Ciganjur</text>
+    <rect x="298" y="214" width="46" height="18" rx="4" fill="#f59e0b" fill-opacity="0.15"/>
+    <text x="321" y="227" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#f59e0b" text-anchor="middle">★ 4.7</text>
+    <text x="352" y="227" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">(890 ulasan)</text>
+    <text x="298" y="254" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">Jl. Brigif No. 12 • ~1.2 km</text>
+    <rect x="298" y="268" width="80" height="22" rx="5" fill="#292524"/>
+    <text x="338" y="283" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f59e0b" text-anchor="middle">Buka GMaps ↗</text>
+
+    <!-- Card 3 -->
+    <rect x="540" y="156" width="236" height="150" rx="12" fill="#1c1917" stroke="#292524"/>
+    <text x="556" y="184" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f5f5f4">Bakso Titoti Pasar Minggu</text>
+    <text x="556" y="202" font-family="system-ui, sans-serif" font-size="10" fill="#a8a29e">Kuliner Legendaris • Pasar Minggu</text>
+    <rect x="556" y="214" width="46" height="18" rx="4" fill="#f59e0b" fill-opacity="0.15"/>
+    <text x="579" y="227" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#f59e0b" text-anchor="middle">★ 4.8</text>
+    <text x="610" y="227" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">(3.100 ulasan)</text>
+    <text x="556" y="254" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">Jl. Raya Pasar Minggu • ~3.5 km</text>
+    <rect x="556" y="268" width="80" height="22" rx="5" fill="#292524"/>
+    <text x="596" y="283" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#f59e0b" text-anchor="middle">Buka GMaps ↗</text>
+
+    <!-- Bottom Scraper Pipeline Stats -->
+    <rect x="24" y="324" width="752" height="150" rx="12" fill="#141210" stroke="#292524"/>
+    <text x="40" y="352" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f5f5f4">Scraper Pipeline &amp; SQLite Synchronization</text>
+    <text x="40" y="372" font-family="system-ui, sans-serif" font-size="10" fill="#a8a29e">Playwright Stealth Feed Crawler • Rotasi Low-and-Slow (2 query per batch tiap 2 jam)</text>
+    
+    <rect x="40" y="390" width="220" height="64" rx="8" fill="#1c1917" stroke="#292524"/>
+    <text x="56" y="412" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">TOTAL TEMPAT MAKAN</text>
+    <text x="56" y="438" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#22c55e">1.588</text>
+
+    <rect x="280" y="390" width="220" height="64" rx="8" fill="#1c1917" stroke="#292524"/>
+    <text x="296" y="412" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">CAKUPAN KECAMATAN</text>
+    <text x="296" y="438" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#f59e0b">8 Kecamatan</text>
+
+    <rect x="520" y="390" width="236" height="64" rx="8" fill="#1c1917" stroke="#292524"/>
+    <text x="536" y="412" font-family="system-ui, sans-serif" font-size="10" fill="#78716c">STORAGE &amp; QUERY ENGINE</text>
+    <text x="536" y="438" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#38bdf8">SQLite WAL</text>
+  </g>
+</svg>

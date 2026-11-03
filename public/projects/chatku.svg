@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <clipPath id="clip"><rect width="800" height="500" rx="8"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#0c0a09"/>
+
+    <!-- Top bar -->
+    <rect width="800" height="40" fill="#1c1917"/>
+    <line x1="0" y1="40" x2="800" y2="40" stroke="#292524" stroke-width="1"/>
+    <circle cx="16" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="52" cy="20" r="5" fill="#22c55e"/>
+    <text x="400" y="25" fill="#e7e5e4" font-family="system-ui, -apple-system, sans-serif" font-size="13" text-anchor="middle" font-weight="600">ChatKu — Self-Hosted AI Assistant &amp; 9Router Gateway</text>
+
+    <!-- Sidebar: Conversations -->
+    <rect x="0" y="40" width="220" height="460" fill="#141210"/>
+    <line x1="220" y1="40" x2="220" y2="500" stroke="#292524" stroke-width="1"/>
+
+    <!-- New Chat Button -->
+    <rect x="14" y="54" width="192" height="34" rx="8" fill="#1c1917" stroke="#292524"/>
+    <text x="32" y="75" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#f5f5f4">+ Percakapan Baru</text>
+
+    <!-- Pinned Chats -->
+    <text x="18" y="112" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#78716c" letter-spacing="1">PINNED</text>
+    
+    <rect x="10" y="122" width="200" height="30" rx="6" fill="#1c1917" stroke="#41372e"/>
+    <text x="24" y="141" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#f59e0b">📌 Refactor Next.js API</text>
+
+    <rect x="10" y="156" width="200" height="30" rx="6" fill="transparent"/>
+    <text x="24" y="175" font-family="system-ui, sans-serif" font-size="11" fill="#a8a29e">📌 Setup Cloudflare Tunnel</text>
+
+    <!-- Recent Chats -->
+    <text x="18" y="210" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#78716c" letter-spacing="1">TERAKHIR</text>
+
+    <text x="24" y="235" font-family="system-ui, sans-serif" font-size="11" fill="#78716c">Analisis PDF Kontrak</text>
+    <text x="24" y="265" font-family="system-ui, sans-serif" font-size="11" fill="#78716c">Desain Arsitektur Microservice</text>
+    <text x="24" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#78716c">Troubleshooting Docker</text>
+
+    <!-- Main Chat Surface -->
+    <!-- Model badge top -->
+    <rect x="238" y="52" width="160" height="26" rx="6" fill="#1c1917" stroke="#292524"/>
+    <circle cx="250" cy="65" r="4" fill="#22c55e"/>
+    <text x="260" y="69" font-family="ui-monospace, monospace" font-size="10" font-weight="600" fill="#e7e5e4">Gemini 3.8 Flash • 9Router</text>
+
+    <!-- User Message Bubble -->
+    <rect x="460" y="96" width="316" height="54" rx="12" fill="#292524"/>
+    <text x="476" y="118" font-family="system-ui, sans-serif" font-size="12" fill="#f5f5f4">Tolong review performa query PostgreSQL</text>
+    <text x="476" y="136" font-family="system-ui, sans-serif" font-size="12" fill="#f5f5f4">pada table messages dengan pg_trgm index.</text>
+
+    <!-- Assistant Message Bubble -->
+    <rect x="238" y="166" width="538" height="230" rx="12" fill="#141210" stroke="#292524"/>
+    <text x="256" y="194" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#f59e0b">ChatKu AI:</text>
+    <text x="256" y="216" font-family="system-ui, sans-serif" font-size="12" fill="#e7e5e4">Dengan indeks GIN trigram, pencarian LIKE '%query%' turun dari 120ms ke ~4ms.</text>
+
+    <!-- Code Block inside Assistant Response -->
+    <rect x="256" y="232" width="502" height="110" rx="8" fill="#0c0a09" stroke="#292524"/>
+    <text x="272" y="254" font-family="ui-monospace, monospace" font-size="11" fill="#78716c">-- Query Execution Plan</text>
+    <text x="272" y="274" font-family="ui-monospace, monospace" font-size="11" fill="#38bdf8">EXPLAIN ANALYZE SELECT id, content</text>
+    <text x="272" y="294" font-family="ui-monospace, monospace" font-size="11" fill="#f5f5f4">FROM messages WHERE content ILIKE '%docker%';</text>
+    <text x="272" y="318" font-family="ui-monospace, monospace" font-size="10" font-weight="700" fill="#22c55e">✓ Index Scan using idx_messages_trgm (Cost 0.28..8.30, 3.4ms)</text>
+
+    <text x="256" y="366" font-family="system-ui, sans-serif" font-size="12" fill="#a8a29e">Indeks ini optimal untuk pencarian teks multibahasa (Indonesia &amp; Inggris).</text>
+
+    <!-- Chat Input Area -->
+    <rect x="238" y="416" width="538" height="52" rx="12" fill="#1c1917" stroke="#292524"/>
+    <text x="256" y="446" font-family="system-ui, sans-serif" font-size="12" fill="#78716c">Ketik pesan atau lampirkan dokumen (PDF, gambar)...</text>
+    <rect x="732" y="426" width="32" height="32" rx="8" fill="#f59e0b"/>
+    <text x="748" y="446" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0c0a09" text-anchor="middle">↑</text>
+  </g>
+</svg>
