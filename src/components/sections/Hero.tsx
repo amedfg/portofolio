@@ -27,9 +27,9 @@ const COMMANDS: Record<
     badge: "API Gateway",
     details: [
       "✓ 4-Layer Domain-Driven Design (DDD)",
-      "✓ Async Workers (Celery & Redis queue)",
-      "✓ LLM Orchestration (LiteLLM, Ollama)",
-      "✓ Production Docker (CF Tunnel)",
+      "✓ Async Workers & Daemons (systemd, Celery)",
+      "✓ LLM Orchestration & Multimodal RAG",
+      "✓ Self-Hosted Infra & Zero Trust Tunnel",
     ],
   },
   "amed --stack": {
@@ -38,9 +38,9 @@ const COMMANDS: Record<
     badge: "Core Engineering",
     details: [
       "Languages: Python, PHP, TypeScript, Go",
-      "Frameworks: FastAPI, Laravel 12, Next.js",
-      "Storage: PostgreSQL, Redis, MinIO (S3)",
-      "Infra: Docker, Cloudflare, Linux, Celery",
+      "Frameworks: FastAPI, Laravel 12, Next.js 15",
+      "Storage: PostgreSQL, SQLite, Redis, MinIO",
+      "Infra: Docker, Cloudflare, Linux systemd",
     ],
   },
   "amed --status": {

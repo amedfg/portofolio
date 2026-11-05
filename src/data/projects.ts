@@ -50,11 +50,11 @@ export const PROJECTS: Project[] = [
     category: "Full-Stack & AI",
     featured: true,
     description:
-      "Automated culinary discovery platform curating 1,500+ restaurants, coffee shops, and street food across South Jakarta with automated headless Google Maps crawling.",
+      "Automated culinary discovery platform curating 1,500+ restaurants, coffee shops, and street food across South Jakarta with headless Google Maps crawling, smart roulette, and bookmarks.",
     highlights: [
       "Playwright stealth feed scraper running automated low-and-slow rotation into SQLite every 2 hours",
+      "Interactive 'Makan Apa Hari Ini? 🎲' culinary roulette modal and persistent local wishlist bookmarks",
       "Real-time Haversine distance calculations relative to user GPS or Ciganjur / Moh. Kahfi center",
-      "Comprehensive sub-district filtering covering Jagakarsa, Pasar Minggu, Cilandak, Kebayoran, and Pancoran",
     ],
     image: img("makanku"),
     tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "SQLite", "Playwright", "systemd"],
@@ -75,6 +75,22 @@ export const PROJECTS: Project[] = [
     image: img("chatku"),
     tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "PostgreSQL", "9Router", "Docker"],
     demo: "https://chat.dema.web.id",
+    github: "",
+  },
+  {
+    title: "Dema MiniPC Hub — Infrastructure & Edge Telemetry",
+    category: "Backend & Architecture",
+    featured: true,
+    description:
+      "Unified self-hosted observability dashboard tracking real-time hardware telemetry, service mesh health, and automated system reliability on an Intel Mini PC.",
+    highlights: [
+      "Direct kernel sysfs sampling of Intel RAPL package-0 energy counters for sub-watt real-time power consumption tracking",
+      "Real-time service health tracking across systemd user daemons, Docker containers, and Cloudflare Zero Trust routes",
+      "Automated reliability monitor with health telemetry for nightly SQLite backups, system watchdog timers, and Telegram alerts",
+    ],
+    image: img("hub-demaminipc"),
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Linux sysfs", "Docker", "systemd", "Cloudflare"],
+    demo: "https://monitoring.dema.web.id",
     github: "",
   },
   {

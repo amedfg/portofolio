@@ -8,12 +8,15 @@ import {
   SiLaravel,
   SiCodeigniter,
   SiFlask,
+  SiFastapi,
   SiNextdotjs,
   SiTailwindcss,
   SiBootstrap,
   SiHtml5,
   SiPostgresql,
   SiMysql,
+  SiSqlite,
+  SiRedis,
   SiMongodb,
   SiMinio,
   SiTensorflow,
@@ -22,6 +25,9 @@ import {
   SiGit,
   SiGitlab,
   SiBitbucket,
+  SiDocker,
+  SiLinux,
+  SiCloudflare,
   SiFigma,
 } from "react-icons/si";
 
@@ -53,6 +59,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Laravel", icon: SiLaravel, level: 95, color: "#FF2D20" },
       { name: "CodeIgniter 4", icon: SiCodeigniter, level: 85, color: "#EF4223" },
       { name: "Flask", icon: SiFlask, level: 88, color: "#000000" },
+      { name: "FastAPI", icon: SiFastapi, level: 82, color: "#009688" },
       { name: "Bun", icon: SiBun, level: 70, color: "#000000" },
     ],
   },
@@ -61,6 +68,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     items: [
       { name: "PostgreSQL", icon: SiPostgresql, level: 92, color: "#4169E1" },
       { name: "MySQL", icon: SiMysql, level: 88, color: "#4479A1" },
+      { name: "SQLite", icon: SiSqlite, level: 90, color: "#003B57" },
+      { name: "Redis", icon: SiRedis, level: 84, color: "#DC382D" },
       { name: "MongoDB", icon: SiMongodb, level: 82, color: "#47A248" },
       { name: "MinIO", icon: SiMinio, level: 78, color: "#C72E49" },
     ],
@@ -86,6 +95,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Tools & DevOps",
     items: [
+      { name: "Docker", icon: SiDocker, level: 88, color: "#2496ED" },
+      { name: "Linux / systemd", icon: SiLinux, level: 86, color: "#FCC624" },
+      { name: "Cloudflare", icon: SiCloudflare, level: 84, color: "#F38020" },
       { name: "Git", icon: SiGit, level: 90, color: "#F05032" },
       { name: "GitLab CI/CD", icon: SiGitlab, level: 82, color: "#FC6D26" },
       { name: "Bitbucket", icon: SiBitbucket, level: 78, color: "#0052CC" },
